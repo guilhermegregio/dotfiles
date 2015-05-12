@@ -25,16 +25,16 @@ export MYSQL_HOME=/usr/local/mysql-5.6.14-osx10.7-x86_64
 export PATH=$MYSQL_HOME/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 
-if [ -f ~/dotfiles/git-completion.bash ]; then
-	.  ~/dotfiles/git-completion.bash
+if [ -f ~/dotfiles/completion/git-completion.bash ]; then
+	.  ~/dotfiles/completion/git-completion.bash
 fi
 
-if [ -f ~/dotfiles/maven-completion.bash ]; then
-	. ~/dotfiles/maven-completion.bash
+if [ -f ~/dotfiles/completion/maven-completion.bash ]; then
+	. ~/dotfiles/completion/maven-completion.bash
 fi
 
-if [ -f ~/dotfiles/npm-completion.bash ]; then
-	. ~/dotfiles/npm-completion.bash
+if [ -f ~/dotfiles/completion/npm-completion.bash ]; then
+	. ~/dotfiles/completion/npm-completion.bash
 fi
 
 function gi() { curl http://www.gitignore.io/api/$@ ;}
