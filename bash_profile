@@ -1,13 +1,7 @@
-for file in ~/.{bash_prompt,aliases}; do
+for file in ~/.{bash_prompt,exports,aliases}; do
     [ -r "$file" ] && source "$file"
 done
 unset file
-
-export JAVA_HOME=$(/usr/libexec/java_home)
-export MYSQL_HOME=/usr/local/mysql-5.6.14-osx10.7-x86_64
-
-export PATH=$MYSQL_HOME/bin:$PATH
-export PATH=/usr/local/bin:$PATH
 
 if [ -f ~/dotfiles/completion/git-completion.bash ]; then
 	.  ~/dotfiles/completion/git-completion.bash
@@ -20,8 +14,6 @@ fi
 if [ -f ~/dotfiles/completion/npm-completion.bash ]; then
 	. ~/dotfiles/completion/npm-completion.bash
 fi
-
-function gi() { curl http://www.gitignore.io/api/$@ ;}
 
 export NVM_DIR="/Users/guilherme/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
