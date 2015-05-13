@@ -9,9 +9,8 @@
 	s = status -s
 	p = push
 	df = diff --color --color-words --abbrev
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 	co = checkout
-	logger = log --graph --pretty=format:'%Cred%h%Creset %Cgreen(%cr) %C(yellow)%d%Creset - %s %C(bold blue)<%an>%Creset'
+	lg = log --graph --pretty=format:'%Cred%h%Creset %Cgreen(%cr) %C(yellow)%d%Creset - %s %C(bold blue)<%an>%Creset'
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
 	ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
 
