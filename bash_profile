@@ -1,23 +1,7 @@
-function parse_git_branch() {
-	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
-}
- 
-RED="\[\033[0;31m\]"
-YELLOW="\[\033[0;33m\]"
-GREEN="\[\033[0;32m\]"
-NO_COLOR="\[\033[0;0m\]"
- 
-PS1="$GREEN\W$NO_COLOR$RED\$(parse_git_branch)$GREEN\$$NO_COLOR "
- 
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
- 
-#aliases
- 
-alias ls='ls -h'
-alias ll='ls -lhF'
-alias la='ls -lhA'
-alias l='ls -CF'
+for file in ~/.{bash_prompt,aliases}; do
+    [ -r "$file" ] && source "$file"
+done
+unset file
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 export MYSQL_HOME=/usr/local/mysql-5.6.14-osx10.7-x86_64

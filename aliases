@@ -1,0 +1,14 @@
+# Easier navigation: .., ..., ~ and -
+alias ..="cd .."
+alias cd..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~" # `cd` is probably faster to type though
+alias -- -="cd -"
+
+# ls aliases
+alias ls='ls -h'
+alias ll='ls -lhF'
+alias la='ls -lhA'
+alias l='ls -CF'
