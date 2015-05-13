@@ -1,3 +1,13 @@
+" Make vim more useful {{{
+set nocompatible
+" }}}
+
+" Syntax highlighting {{{
+set t_Co=256
+set background=dark
+syntax on
+" }}}
+ 
 "......................................................................ARQUIVO
 "" Sai fora na marra!
 imap <F12> <esc>:wqa!<cr>
@@ -19,9 +29,19 @@ set softtabstop=4
 set background=dark
 set clipboard=unnamed
 set nocompatible
-set rtp+=~/dotfiles/vim/bundle/Vundle.vim
 
+" JSBEAUTIFY shorcuts
+" for javascript
+autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
+" for html
+autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
+" for css or scss
+autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
+
+" Plugins {{{
 filetype off
+
+set rtp+=~/dotfiles/vim/bundle/Vundle.vim
 call vundle#begin('~/dotfiles/vim/bundle')
 
 Plugin 'gmarik/Vundle.vim'
@@ -36,13 +56,4 @@ Plugin 'initrc/eclim-vundle'
 
 call vundle#end()
 filetype plugin indent on
-
-syn on
-
-" JSBEAUTIFY shorcuts
-" for javascript
-autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
-" for html
-autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
-" for css or scss
-autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
+" }}}
