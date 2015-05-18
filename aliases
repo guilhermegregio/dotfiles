@@ -12,3 +12,10 @@ alias ls='ls -h'
 alias ll='ls -lhF'
 alias la='ls -lhA'
 alias l='ls -CF'
+
+
+# ip
+alias ip="printf  '%s\n%s\n' $(ipconfig getifaddr en0) $(ipconfig getifaddr en1)"
+
+# updates
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g;'
