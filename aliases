@@ -3,7 +3,6 @@ alias p="cd ~/Documents/Projetos"
 alias g="git"
 alias h="history"
 alias j="jobs"
-alias v="vim"
 
 # Easier navigation: .., ..., ~ and -
 alias ..="cd .."
@@ -15,7 +14,7 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # programs
-alias st='open -a Sublime\ Text'
+alias subl='open -a Sublime\ Text'
 alias ws='open -a WebStorm'
 alias safari='open -a safari'
 alias firefox='open -a firefox'
