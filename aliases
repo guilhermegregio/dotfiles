@@ -15,7 +15,7 @@ alias -- -="cd -"
 
 # programs
 alias subl='open -a Sublime\ Text'
-alias ws='open -a WebStorm'
+alias webstorm='open -a WebStorm'
 alias safari='open -a safari'
 alias firefox='open -a firefox'
 alias chrome='open -a google\ chrome'

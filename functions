@@ -31,3 +31,13 @@ function v() {
                 vim "$@"
         fi
 }
+
+# 'ws' with no arguments opens the current directory in Web Storm, otherwise
+# opens tthe given location
+function ws() {
+        if [ $# -eq 0 ]; then
+                webstorm .
+        else
+                webstorm "$@"
+        fi
+}
