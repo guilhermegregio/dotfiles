@@ -1,3 +1,10 @@
+# Shortcuts
+alias p="cd ~/Documents/Projetos"
+alias g="git"
+alias h="history"
+alias j="jobs"
+alias v="vim"
+
 # Easier navigation: .., ..., ~ and -
 alias ..="cd .."
 alias cd..="cd .."
