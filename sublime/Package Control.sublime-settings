@@ -1,0 +1,25 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AngularJS",
+		"Chai Completions",
+		"DocBlockr",
+		"Emmet",
+		"FileSystem Autocompletion",
+		"Gist",
+		"Gutter Color",
+		"HTML-CSS-JS Prettify",
+		"Jade",
+		"JavaScript Patterns",
+		"JavaScript Refactor",
+		"jQuery",
+		"Mocha Snippets",
+		"Package Control",
+		"Sass",
+		"SideBarEnhancements",
+		"SublimeCodeIntel"
+	]
+}
