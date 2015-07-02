@@ -4,7 +4,6 @@ set nocompatible
 
 " Syntax highlighting {{{
 set t_Co=256
-set background=dark
 syntax on
 " }}}
  
@@ -26,9 +25,22 @@ set nowrap
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set background=dark
 set clipboard=unnamed
-set nocompatible
+set laststatus=2
+set encoding=utf-8
+set guifont=Inconsolata\ for\ Powerline:h15
+let g:Powerline_symbols = 'fancy'
+set fillchars+=stl:\ ,stlnc:\
+set term=xterm-256color
+set termencoding=utf-8
+set background=dark
+
+if has("gui_running")
+	let s:uname = system("uname")
+	if s:uname == "Darwin\n"
+		set guifont=Inconsolata\ for\ Powerline:h15
+	endif
+endif
 
 " JSBEAUTIFY shorcuts
 " for javascript
@@ -38,12 +50,12 @@ autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
 " for css or scss
 autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
 
+set rtp+=~/dotfiles/vim/bundle/powerline/powerline/bindings/vim
 " Plugins {{{
 filetype off
 
 set rtp+=~/dotfiles/vim/bundle/Vundle.vim
 call vundle#begin('~/dotfiles/vim/bundle')
-
 Plugin 'gmarik/Vundle.vim'
 " Adicionar outros plugins
 " Plugin ''
@@ -53,7 +65,11 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'ervandew/supertab'
 Plugin 'initrc/eclim-vundle'
+Plugin 'powerline/powerline'
+Plugin 'yosiat/oceanic-next-vim'
 
 call vundle#end()
 filetype plugin indent on
 " }}}
+
+" colo OceanicNext
