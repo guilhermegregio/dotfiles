@@ -11,7 +11,7 @@ syntax on
 "" Sai fora na marra!
 imap <F12> <esc>:wqa!<cr>
 map <F12> :wqa!<cr>
-" Abreviacoes uteis para sua sanidade mental
+" Abreviacoes-uteis para sua sanidade mental
 cab W w| cab Q q| cab Wq wq| cab wQ wq| cab WQ wq
 
 " Copy e paste
@@ -19,6 +19,10 @@ nmap <F3> :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
 imap <F3> <Esc>:set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
 nmap <F2> :.w !pbcopy<CR><CR>
 vmap <F2> :w !pbcopy<CR><CR>
+
+hi    Search ctermbg=green ctermfg=black
+hi IncSearch ctermbg=black ctermfg=cyan
+set is hls ic scs  "opções espertas de busca
 
 set number
 set nowrap
