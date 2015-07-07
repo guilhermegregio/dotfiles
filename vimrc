@@ -6,7 +6,9 @@ set nocompatible
 set t_Co=256
 syntax on
 " }}}
- 
+
+iab gmg Guilherme Mangabeira Gregio<guilherme@gregio.net>
+
 "......................................................................ARQUIVO
 "" Sai fora na marra!
 imap <F12> <esc>:wqa!<cr>
