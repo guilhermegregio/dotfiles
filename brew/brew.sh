@@ -71,7 +71,8 @@ brew install maven
 brew install python
 brew install tmux
 brew install nvm
-
+brew install mysql
+brew install mongodb
 ## brew install terminal-notifier
 
 ## brew install android-platform-tools

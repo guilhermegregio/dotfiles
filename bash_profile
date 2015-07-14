@@ -15,8 +15,9 @@ if [ -f ~/dotfiles/completion/npm-completion.bash ]; then
 	. ~/dotfiles/completion/npm-completion.bash
 fi
 
-export NVM_DIR="/Users/guilherme/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 

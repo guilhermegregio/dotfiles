@@ -5,37 +5,34 @@
 #     brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup` 
 
 
-# Install native apps
-brew install caskroom/cask/brew-cask
-brew tap caskroom/versions
+ #Install native apps
+#brew install caskroom/cask/brew-cask
+#brew tap caskroom/versions
+
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # drives
-brew cask install --appdir="/Applications" dropbox
-brew cask install --appdir="/Applications" google-drive
+brew cask install dropbox
+brew cask install google-drive
 
 # dev
-brew cask install --appdir="/Applications" alfred
-brew cask install --appdir="/Applications" iterm2
-brew cask install --appdir="/Applications" sublime-text3
-brew cask install --appdir="/Applications" java
-brew cask install --appdir="/Applications" macvim
-brew cask install --appdir="/Applications" virtualbox
-brew cask install --appdir="/Applications" eclipse-jee
-brew cask install --appdir="/Applications" sts
-
+brew cask install alfred
+brew cask install iterm2
+brew cask install sublime-text3
+brew cask install atom
+brew cask install java
+brew cask install macvim
+brew cask install virtualbox
+brew cask install sts
+brew cask install mysqlworkbench
+brew cask install filezilla
 # browsers
-brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" google-chrome-canary
-brew cask install --appdir="/Applications" firefox-nightly
-brew cask install --appdir="/Applications" firefox
-brew cask install --appdir="/Applications" webkit-nightly
-brew cask install --appdir="/Applications" chromium
-brew cask install --appdir="/Applications" torbrowser
+brew cask install google-chrome
+brew cask install google-chrome-canary
+brew cask install firefox
 
 # less often
-brew cask install --appdir="/Applications" vlc
-
-brew cask alfred link
+brew cask install vlc
 
 brew cleanup --force
 rm -f -r /Library/Caches/Homebrew/*
