@@ -16,7 +16,7 @@ brew cask install --appdir="/Applications" google-drive
 # dev
 brew cask install --appdir="/Applications" alfred
 brew cask install --appdir="/Applications" iterm2
-brew cask install --appdir="/Applications" sublime-text
+brew cask install --appdir="/Applications" sublime-text3
 brew cask install --appdir="/Applications" java
 brew cask install --appdir="/Applications" macvim
 brew cask install --appdir="/Applications" virtualbox
