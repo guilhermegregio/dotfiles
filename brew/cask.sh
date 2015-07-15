@@ -26,6 +26,9 @@ brew cask install virtualbox
 brew cask install sts
 brew cask install mysqlworkbench
 brew cask install filezilla
+brew cask install vagrant
+brew cask install vagrant-manager
+
 # browsers
 brew cask install google-chrome
 brew cask install google-chrome-canary
