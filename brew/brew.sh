@@ -3,10 +3,10 @@
 # Install command-line tools using Homebrew
 
 # Make sure we’re using the latest Homebrew
-brew update
+#brew update
 
 # Upgrade any already-installed formulae
-brew upgrade
+#brew upgrade
 
 
 # GNU core utilities (those that come with OS X are outdated)
