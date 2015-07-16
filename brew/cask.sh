@@ -37,6 +37,7 @@ brew cask install firefox
 # less often
 brew cask install vlc
 brew cask install send-to-kindle
+brew cask install libreoffice
 
 brew cleanup --force
 rm -f -r /Library/Caches/Homebrew/*
