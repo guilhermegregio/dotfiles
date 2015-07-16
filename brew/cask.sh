@@ -28,7 +28,7 @@ brew cask install mysqlworkbench
 brew cask install filezilla
 brew cask install vagrant
 brew cask install vagrant-manager
-
+brew cask install intellij-idea
 # browsers
 brew cask install google-chrome
 brew cask install google-chrome-canary
