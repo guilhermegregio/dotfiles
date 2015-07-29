@@ -73,6 +73,7 @@ brew install tmux
 brew install nvm
 brew install mysql
 brew install mongodb
+brew install phantomjs
 ## brew install terminal-notifier
 
 ## brew install android-platform-tools

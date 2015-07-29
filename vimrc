@@ -48,6 +48,9 @@ if has("gui_running")
 	endif
 endif
 
+" Macros
+let @q='0f,xxd$a</a>0i<a href="pa">j@q'
+
 " JSBEAUTIFY shorcuts
 " for javascript
 autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
