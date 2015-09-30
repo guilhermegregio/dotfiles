@@ -50,6 +50,10 @@ endif
 
 " Macros
 let @q='0f,xxd$a</a>0i<a href="pa">j@q'
+let @t='_O<tr height="22" valign="top"><td align="left"><font size="2" color="#0b2266" face="arial">jo</font></tr></tr>j_'
+
+" CtrlP Config
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files . -co --exclude-standard|egrep -v "\.(git|svn|jpg|jpeg|png|gif)$"']
 
 " JSBEAUTIFY shorcuts
 " for javascript
@@ -76,6 +80,7 @@ Plugin 'ervandew/supertab'
 Plugin 'initrc/eclim-vundle'
 Plugin 'powerline/powerline'
 Plugin 'yosiat/oceanic-next-vim'
+Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()
 filetype plugin indent on
