@@ -8,5 +8,5 @@ brew upgrade
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
-./brew.sh
-./cask.sh
+sh ./brew.sh
+sh ./cask.sh
