@@ -9,3 +9,4 @@ done
 rm -f "$HOME/.oh-my-zsh"
 ln -s "$HOME/dotfiles/oh-my-zsh" "$HOME/.oh-my-zsh"
 
+vim +PluginInstall +qall
