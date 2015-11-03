@@ -1,3 +1,22 @@
+function xcopy () {
+	if [[ "$(uname -s)" == "Linux" ]]; then
+		/usr/bin/xclip -selection clipboard
+	else
+		/usr/bin/pbcopy
+	fi
+}
+
+function xpaste () {
+	if [[ "$(uname -s)" == "Linux" ]]; then
+		/usr/bin/xclip -selection clipboard -o
+	else
+		/usr/bin/pbpaste
+	fi
+}
+
+alias pbcopy="xcopy"
+alias pbpaste="xpaste"
+
 # Shortcuts
 alias p="cd ~/Documents/Projetos"
 alias g="git"
@@ -28,7 +47,7 @@ alias l='ls -CF'
 
 
 # ip
-alias ip="printf  '%s\n%s\n' $(ipconfig getifaddr en0) $(ipconfig getifaddr en1)"
+alias ip="printf  '%s\n%s\n' $(ifconfig eth0 | grep 'inet ' | sed -e 's/:/ /' | awk '{print $3}')"
 
 # updates
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g;'

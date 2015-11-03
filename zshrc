@@ -1,6 +1,6 @@
-[[ $TERM != "screen" ]] && exec tmux
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/guilherme/.oh-my-zsh
+export ZSH=/home/guilherme/.oh-my-zsh
+ZSH_TMUX_AUTOSTART=true
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -50,13 +50,15 @@ ZSH_THEME="bira"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git tmux)
 
 # User configuration
 
   export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+
+source ~/dotfiles/aliases
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
