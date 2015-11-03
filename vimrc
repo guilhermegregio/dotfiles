@@ -7,6 +7,9 @@ set t_Co=256
 syntax on
 " }}}
 
+set backupdir=~/.backup//
+set directory=~/.backup//
+
 iab gmg Guilherme Mangabeira Gregio<guilherme@gregio.net>
 
 "......................................................................ARQUIVO
