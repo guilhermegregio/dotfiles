@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/guilherme/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 ZSH_TMUX_AUTOSTART=true
 
 # Set name of the theme to load.
@@ -58,7 +58,7 @@ plugins=(git tmux)
 # export MANPATH="/usr/local/man:$MANPATH"
 
 
-source ~/dotfiles/aliases
+source $HOME/dotfiles/aliases
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment

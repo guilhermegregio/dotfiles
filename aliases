@@ -47,7 +47,7 @@ alias l='ls -CF'
 
 
 # ip
-alias ip="printf  '%s\n%s\n' $(ifconfig eth0 | grep 'inet ' | sed -e 's/:/ /' | awk '{print $3}')"
+alias ip="printf  '%s\n%s\n' $(ifconfig en0 2> /dev/null| grep 'inet ' | sed -e 's/:/ /' | awk '{print $2}')"
 
 # updates
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g;'
