@@ -58,6 +58,9 @@ let @t='_O<tr height="22" valign="top"><td align="left"><font size="2" color="
 " CtrlP Config
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files . -co --exclude-standard|egrep -v "\.(git|svn|jpg|jpeg|png|gif)$"']
 
+" CtrlP Config
+map <C-n> :NERDTreeToggle<CR>
+
 " JSBEAUTIFY shorcuts
 " for javascript
 autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
@@ -78,6 +81,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'maksimr/vim-jsbeautify' 
 Plugin 'mattn/emmet-vim'
 Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'ervandew/supertab'
 Plugin 'initrc/eclim-vundle'

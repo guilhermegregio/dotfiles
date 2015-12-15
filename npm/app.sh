@@ -1,7 +1,11 @@
 #!/bin/bash
 
-npm install -g gh 
-npm install -g pm2
-npm install -g express-generator
-npm install -g gulp
-npm install -g grunt-cli
+npm install -g \
+	gh \
+	pm2 \
+	express-generator \
+	gulp \
+	grunt-cli \
+	cordova \
+	ionic \
+	ios-sim
