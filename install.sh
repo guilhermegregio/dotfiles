@@ -8,6 +8,8 @@ done
 
 rm -rf "$HOME/.oh-my-zsh"
 rm -rf "$HOME/.fluxbox"
+rm -rf "$HOME/.backup"
+mkdir "$HOME/.backup"
 ln -s "$HOME/dotfiles/oh-my-zsh" "$HOME/.oh-my-zsh"
 ln -s "$HOME/dotfiles/fluxbox" "$HOME/.fluxbox"
 
