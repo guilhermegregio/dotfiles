@@ -1,0 +1,120 @@
+#Fluxbox Theme
+#Theme Name: dragon_tech
+#Theme By: TrAnCeFX
+#Logo By: TrAnCeFX (Like my Gimp skills ^_^)
+#Contact: irc.openprojects.net #fluxbox
+#Fluxbox and themes @: http://fluxbox.sf.net
+
+! -- background section start -- !
+rootCommand:				Esetroot -s ~/.fluxbox/backgrounds/dragon_tech_logo.png
+! -- background section end -- !
+
+
+! -- font section start -- !
+*font:					snap
+! -- font section end -- !
+
+
+! -- toolbar section start -- !
+toolbar.button:				raised gradient pipecross
+toolbar.button.picColor:		#00ff11
+toolbar.button.color:			#004000
+toolbar.button.colorTo:			#009b00
+
+toolbar.button.pressed:			flat gradient pipecross
+toolbar.button.pressed.color: 		#000000
+toolbar.button.pressed.colorTo: 	#009b00
+
+toolbar.clock:				raised gradient pipecross
+toolbar.clock.color: 			#000000
+toolbar.clock.colorTo: 			#009b00
+toolbar.clock.textColor:		#00ff11
+
+toolbar.label:				raised gradient pipecross
+toolbar.label.color:		 	#000000
+toolbar.label.colorTo: 			#009b00
+toolbar.label.textColor:		#00ff11
+
+toolbar.windowLabel:			raised gradient pipecross
+toolbar.windowLabel.color: 		#000000
+toolbar.windowLabel.colorTo: 		#009b00
+toolbar.windowLabel.textColor:		#00ff11
+
+toolbar.justify:			center
+! -- toolbar section end -- !
+
+! -- menu section start -- !
+menu.title:    				raised gradient pipecross
+menu.title.color:			#000000
+menu.title.colorTo:			#009b00
+menu.title.textColor:			#00ff11
+menu.title.justify:			center
+
+menu.frame:				flat gradient crossdiagonal
+menu.frame.color:			#000000
+menu.frame.colorTo:			#009b00
+menu.frame.textColor:			#00bb00
+menu.frame.justify:			left
+
+menu.hilite: parentrelative
+menu.hilite.textColor:			#00ff11
+
+menu.bullet:				empty
+! -- menu section end -- !
+
+
+! -- window section start -- !
+window.title.focus.color:  		black
+window.title.unfocus.color: 		black
+
+window.label.focus:      		raised gradient pipecross
+window.label.focus.color:		#000000
+window.label.focus.colorTo:		#009b00
+window.label.focus.textColor:		#00ff11
+
+window.label.unfocus:     		raised gradient pipecross
+window.label.unfocus.color:		#000000
+window.label.unfocus.colorTo:		#006000
+window.label.unfocus.textColor:		#00bb00
+
+window.button.focus:		        raised gradient pipecross
+window.button.focus.picColor:		#000000
+window.button.focus.color:		#004000
+window.button.focus.colorTo:		#009b00
+
+window.button.unfocus:			raised gradient pipecross
+window.button.unfocus.picColor: 	#000000
+window.button.unfocus.color:		#000000
+window.button.unfocus.colorTo:		#006000
+
+window.button.pressed:			flat gradient pipecross
+window.button.pressed.picColor: 	#009b00
+window.button.pressed.color:		#000000
+window.button.pressed.colorTo:		#009b00
+
+window.handle.focus:			raised gradient pipecross
+window.handle.focus.color: 		#000000
+window.handle.focus.colorTo: 		#009b00
+
+window.handle.unfocus:			raised gradient pipecross
+window.handle.unfocus.color: 		#000000
+window.handle.unfocus.colorTo: 		#006000
+
+window.grip.focus:     			raised gradient pipecross
+window.grip.focus.color:    		#000000
+window.grip.focus.colorTo:   		#009b00
+
+window.grip.unfocus:			flat gradient pipecross
+window.grip.unfocus.color:		#000000
+window.grip.unfocus.colorTo:		#006000
+
+window.justify:				center
+! -- window section end -- !
+
+
+! -- width section start -- !
+borderWidth:				0
+handleWidth:				1
+frameWidth:				0
+bevelWidth:				1
+! -- width section stop -- !

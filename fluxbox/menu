@@ -1,3 +1,9 @@
 [begin] (fluxbox)
+[exec] (Firefox) {/usr/bin/firefox}
+[exec] (Chrome) {/usr/bin/google-chrome}
+[exec] (Terminal) {/usr/bin/terminator}
+[exec] (IDEA 15) {/opt/idea15/bin/idea.sh}
+[exec] (Arquivos) {/usr/bin/thunar}
+[separator]
 [include] (/etc/X11/fluxbox/fluxbox-menu)
 [end]

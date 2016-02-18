@@ -7,5 +7,4 @@ npm install -g \
 	gulp \
 	grunt-cli \
 	cordova \
-	ionic \
-	ios-sim
+	ionic 

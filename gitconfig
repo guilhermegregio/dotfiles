@@ -55,7 +55,7 @@
 
 
 [credential]
-	helper = osxkeychain
+	helper = cache --timeout=28800
 
 
 

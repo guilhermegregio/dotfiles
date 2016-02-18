@@ -56,3 +56,8 @@ alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup
 
 # cleanup
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
+
+
+# deploy client aws sandbox dafiti
+alias client-sync-sandbox="aws s3 sync . s3://sandbox-king.aws.dafitierp.com.br/ --region us-east-1"
+alias client-sync-prod="aws s3 sync . s3://king.dafiti.com.br/ --region sa-east-1"

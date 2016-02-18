@@ -7,6 +7,7 @@
 # Change your keymap:
 xmodmap "/home/guilherme/.Xmodmap"
 
+fbsetbg -c ~/dotfiles/fluxbox/backgrounds/debian-os-picture-wallpaper-widescreen-143hbky1ud.jpg
 # Applications you want to run with fluxbox.
 # MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
 #
@@ -14,6 +15,8 @@ xmodmap "/home/guilherme/.Xmodmap"
 # wmnd &
 # wmsmixer -w &
 # idesk &
+vmware-user &
+gkrellm -w &
 #
 # Debian-local change:
 #   - fbautostart has been added with a quick hack to check to see if it
