@@ -1,0 +1,26 @@
+[global_config]
+  enabled_plugins = APTURLHandler, LaunchpadBugURLHandler
+  hide_from_taskbar = True
+  tab_position = hidden
+  borderless = True
+[keybindings]
+  full_screen = <Ctrl><Shift>F11
+[profiles]
+  [[default]]
+    use_system_font = False
+    background_darkness = 0.77
+    scrollback_lines = 0
+    background_type = transparent
+    background_image = None
+    show_titlebar = False
+    font = Inconsolata-g for Powerline Medium 13
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
