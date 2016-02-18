@@ -7,4 +7,5 @@ npm install -g \
 	gulp \
 	grunt-cli \
 	cordova \
-	ionic 
+	ionic \
+	http-server	
