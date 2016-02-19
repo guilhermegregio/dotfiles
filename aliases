@@ -61,3 +61,7 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 # deploy client aws sandbox dafiti
 alias client-sync-sandbox="aws s3 sync . s3://sandbox-king.aws.dafitierp.com.br/ --region us-east-1"
 alias client-sync-prod="aws s3 sync . s3://king.dafiti.com.br/ --region sa-east-1"
+
+
+alias ssh-sandbox-dafiti="ssh ggregio@dft-us-openfire-backend-38bf02ed.aws.dafitierp.com.br"
+
