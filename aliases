@@ -63,5 +63,7 @@ alias client-sync-sandbox="aws s3 sync . s3://sandbox-king.aws.dafitierp.com.br/
 alias client-sync-prod="aws s3 sync . s3://king.dafiti.com.br/ --region sa-east-1"
 
 
-alias ssh-sandbox-dafiti="ssh ggregio@dft-us-openfire-backend-38bf02ed.aws.dafitierp.com.br"
+alias ssh-king-sandbox="ssh ggregio@dft-us-openfire-backend-38bf02ed.aws.dafitierp.com.br"
+alias ssh-king-prod1="ssh -i $HOME/.keys/king-prod.pem king-deploy@dft-sa-king-4c20889d.aws.dafiticorp.com.br"
+alias ssh-king-prod2="ssh -i $HOME/.keys/king-prod.pem king-deploy@dft-sa-king-34d918d6.aws.dafiticorp.com.br"
 
