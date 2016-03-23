@@ -10,9 +10,11 @@ rm -rf "$HOME/.oh-my-zsh"
 rm -rf "$HOME/.fluxbox"
 rm -rf "$HOME/.backup"
 rm -rf "$HOME/.config/terminator/config"
+rm -rf "$HOME/.bin"
 mkdir "$HOME/.backup"
 ln -s "$HOME/dotfiles/oh-my-zsh" "$HOME/.oh-my-zsh"
 ln -s "$HOME/dotfiles/fluxbox" "$HOME/.fluxbox"
+ln -s "$HOME/dotfiles/bin" "$HOME/.bin"
 ln -s "$HOME/dotfiles/terminator/config" "$HOME/.config/terminator/config"
 
 vim +PluginInstall +qall

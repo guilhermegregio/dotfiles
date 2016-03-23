@@ -17,6 +17,10 @@ function xpaste () {
 alias pbcopy="xcopy"
 alias pbpaste="xpaste"
 
+function mkv2mp4 () {
+	avconv -i $1 -c:v libx264 "$1-output.mp4"
+}
+
 # Shortcuts
 alias p="cd ~/Documents/Projetos"
 alias g="git"
@@ -45,6 +49,8 @@ alias ll='ls -lhF'
 alias la='ls -lhA'
 alias l='ls -CF'
 
+# recording window
+alias gravar='sh ~/.bin/recording-window.sh'
 
 # ip
 alias ip="printf  '%s\n%s\n' $(ifconfig en0 2> /dev/null| grep 'inet ' | sed -e 's/:/ /' | awk '{print $2}')"
@@ -67,3 +73,5 @@ alias ssh-king-sandbox="ssh ggregio@dft-us-openfire-backend-38bf02ed.aws.dafitie
 alias ssh-king-prod1="ssh -i $HOME/.keys/king-prod.pem king-deploy@dft-sa-king-4c20889d.aws.dafiticorp.com.br"
 alias ssh-king-prod2="ssh -i $HOME/.keys/king-prod.pem king-deploy@dft-sa-king-34d918d6.aws.dafiticorp.com.br"
 
+alias start-postgres="sudo docker run --rm -P -p 5432:5432 --name pg_test eg_postgresql"
+alias start-mysql="sudo docker run --rm -P -p 3306:3306 --name my_test -e MYSQL_ROOT_PASSWORD=docker mysql"

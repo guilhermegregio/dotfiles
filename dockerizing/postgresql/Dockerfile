@@ -1,6 +1,7 @@
 #
 # example Dockerfile for https://docs.docker.com/examples/postgresql_service/
 #
+
 FROM ubuntu
 MAINTAINER SvenDowideit@docker.com
 
