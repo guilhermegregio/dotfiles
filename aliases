@@ -79,3 +79,4 @@ alias ssh-miati-server="ssh -p 2722 missaci@miati.com.br"
 
 alias start-postgres="sudo docker run --rm -P -p 5432:5432 --name pg_test eg_postgresql"
 alias start-mysql="sudo docker run --rm -P -p 3306:3306 --name my_test -e MYSQL_ROOT_PASSWORD=docker mysql"
+alias start-mongodb="sudo docker run --rm -P -p 27017:27017 --name mongo_test eg_mongodb"
