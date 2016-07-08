@@ -13,3 +13,6 @@
 [submodule "oceanic-next-gnome-terminal"]
 	path = oceanic-next-gnome-terminal
 	url = https://github.com/denysdovhan/oceanic-next-gnome-terminal.git
+[submodule "ssh"]
+	path = ssh
+	url = git@bitbucket.org:guilhermegregio/ssh.git
