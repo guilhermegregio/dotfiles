@@ -68,15 +68,6 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 alias client-sync-sandbox="aws s3 sync . s3://sandbox-king.aws.dafitierp.com.br/ --region us-east-1"
 alias client-sync-prod="aws s3 sync . s3://king.dafiti.com.br/ --region sa-east-1"
 
-# Dafiti
-alias ssh-king-sandbox="ssh ggregio@dft-us-openfire-backend-38bf02ed.aws.dafitierp.com.br"
-alias ssh-king-prod1="ssh -i $HOME/.keys/king-prod.pem king-deploy@dft-sa-king-4c20889d.aws.dafiticorp.com.br"
-alias ssh-king-prod2="ssh -i $HOME/.keys/king-prod.pem king-deploy@dft-sa-king-34d918d6.aws.dafiticorp.com.br"
-
-# Miati
-alias ssh-miati-devtools="ssh -p 2722 gregio@devtools.miati.com.br"
-alias ssh-miati-server="ssh -p 2722 missaci@miati.com.br"
-
 alias start-postgres="sudo docker run --rm -P -p 5432:5432 --name pg_test eg_postgresql"
 alias start-mysql="sudo docker run --rm -P -p 3306:3306 --name my_test -e MYSQL_ROOT_PASSWORD=docker mysql"
 alias start-mongodb="sudo docker run --rm -P -p 27017:27017 --name mongo_test eg_mongodb"
