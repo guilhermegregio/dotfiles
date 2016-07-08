@@ -20,4 +20,4 @@ ln -s "$HOME/dotfiles/terminator/config" "$HOME/.config/terminator/config"
 vim +PluginInstall +qall
 
 # rodar este comando para definir o zsh como default
-#chsh -s /bin/zsh
+chsh -s /bin/zsh

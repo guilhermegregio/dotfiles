@@ -44,13 +44,6 @@ set term=xterm-256color
 set termencoding=utf-8
 set background=dark
 
-if has("gui_running")
-	let s:uname = system("uname")
-	if s:uname == "Darwin\n"
-		set guifont=Inconsolata\ for\ Powerline:h15
-	endif
-endif
-
 " Macros
 let @q='0f,xxd$a</a>0i<a href="pa">j@q'
 let @t='_O<tr height="22" valign="top"><td align="left"><font size="2" color="#0b2266" face="arial">jo</font></tr></tr>j_'
@@ -92,7 +85,6 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'ervandew/supertab'
-Plugin 'initrc/eclim-vundle'
 Plugin 'powerline/powerline'
 Plugin 'yosiat/oceanic-next-vim'
 Plugin 'altercation/vim-colors-solarized'
@@ -101,4 +93,4 @@ call vundle#end()
 filetype plugin indent on
 " }}}
 
-" colo OceanicNext
+"colo OceanicNext
