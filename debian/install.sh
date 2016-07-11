@@ -13,7 +13,7 @@ sudo apt-get install software-properties-common python-software-properties
 sudo pip install git+git://github.com/Lokaltog/powerline 
 sudo apt-get install fluxbox
 sudo apt-get install xclip
-
+pip install awscli
 wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf 
 wget https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf 
 sudo mv PowerlineSymbols.otf /usr/share/fonts/ 
