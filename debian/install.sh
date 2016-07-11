@@ -7,6 +7,8 @@ apt-get install python-pip
 apt-get install curl
 apt-get install maven
 apt-get install zsh
+apt-get install git-flow
+apt-get install tig
 sudo apt-get install software-properties-common python-software-properties
 sudo pip install git+git://github.com/Lokaltog/powerline 
 sudo apt-get install fluxbox
