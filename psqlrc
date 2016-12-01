@@ -1,0 +1,16 @@
+\set QUIET 1
+
+\pset pager off
+
+\set PROMPT1 '%[%033[1m%]%M %n@%/%R%[%033[0m%]%# '
+\set PROMPT2 '[more] %R > '
+
+\timing
+\x auto
+
+\set HISTFILE ~/.psql_history- :DBNAME
+\set HISTSIZE 2000
+\set HISTCONTROL ignoredups
+\set VERBOSITY verbose
+
+\unset QUIET

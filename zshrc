@@ -53,8 +53,9 @@ ZSH_THEME="bira"
 plugins=(git tmux git-flow)
 
 # User configuration
+export GRADLE_HOME="/opt/gradle-2.14"
 
-  export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$GRADLE_HOME/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 

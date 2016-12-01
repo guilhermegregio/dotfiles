@@ -12,11 +12,13 @@ rm -rf "$HOME/.backup"
 rm -rf "$HOME/.config/terminator/config"
 rm -rf "$HOME/.bin"
 rm -rf "$HOME/.ssh"
+rm -rf "$HOME/.pgpass"
 mkdir "$HOME/.backup"
 ln -s "$HOME/dotfiles/oh-my-zsh" "$HOME/.oh-my-zsh"
 ln -s "$HOME/dotfiles/fluxbox" "$HOME/.fluxbox"
 ln -s "$HOME/dotfiles/bin" "$HOME/.bin"
 ln -s "$HOME/dotfiles/ssh" "$HOME/.ssh"
+ln -s "$HOME/dotfiles/ssh/pgpass" "$HOME/.pgpass"
 
 vim +PluginInstall +qall
 
