@@ -1,3 +1,26 @@
+function scp-king(){
+	if [ -f $1 ]
+	then
+		for machine in $(</etc/dsh/group/deploy-api); do
+			scp -p $1 ${machine}:~/
+		done
+	else
+		echo "$1 não encontrado"
+	fi
+}
+
+function xml-reversa(){
+	if [[ -z "$2" ]] then
+		dsh -Ma -c grep -rin $1 /opt/wildfly/standalone/log/server.log
+	else
+		if [[ -z "$3" ]] then
+			dsh -Ma -c grep -rin $1 /opt/wildfly/standalone/log/server.log.$2
+		else
+			dsh -Ma -c zgrep $1 /opt/wildfly/standalone/log/server.log.$2.gz
+		fi
+	fi
+}
+
 function xcopy () {
 	if [[ "$(uname -s)" == "Linux" ]]; then
 		/usr/bin/xclip -selection clipboard

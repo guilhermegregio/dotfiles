@@ -43,7 +43,7 @@ set fillchars+=stl:\ ,stlnc:\
 set term=xterm-256color
 set termencoding=utf-8
 set background=dark
-
+set clipboard=unnamedplus
 " Macros
 let @q='0f,xxd$a</a>0i<a href="pa">j@q'
 let @t='_O<tr height="22" valign="top"><td align="left"><font size="2" color="#0b2266" face="arial">jo</font></tr></tr>j_'
