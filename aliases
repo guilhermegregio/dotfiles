@@ -90,4 +90,7 @@ alias start-mongodb="docker run --rm -P -p 27017:27017 --name mongo_test eg_mong
 
 # postgresql
 alias psql-king-sandbox="psql -h 172.22.15.254 -p 5432 -U openfire -d openfire"
-alias psql-king-prod="psql -h dft-sa-king-pgpool.aws.dafiticorp.com.br -p 9999 -U openfire -d openfire"
+alias psql-king-prod="psql -h dft-sa-king-db01.aws.dafiticorp.com.br -p 5432 -U openfire -d openfire"
+
+# Remover kernels antigos
+alias remove-old-kernels='sh ~/.bin/remove_old_kernels.sh'

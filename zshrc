@@ -50,7 +50,7 @@ ZSH_THEME="bira"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git tmux git-flow)
+plugins=(git tmux git-flow ng)
 
 # User configuration
 export GRADLE_HOME="/opt/gradle-2.14"
