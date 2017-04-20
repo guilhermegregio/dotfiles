@@ -9,17 +9,24 @@
 #
 #      AUTHOR: Guilherme M Gregio <guilherme@gregio.net> (gregio.net)
 #     CREATED: 20/04/2017
-#     VERSION: 1.0
+#     VERSION: 1.1
 #========================================================================================================
 
 #uname -r 
 #ls /boot | grep vmlinuz | cut -d'-' -f2,3
 #dpkg -l |grep ^ii| grep 4.4.0-34|awk -F' ' '{ print $2 }'|xargs -I % sh -c 'echo sudo apt remove -y %'
 
+IS_REMOVED=0;
+
 for KERNEL in $(ls /boot | grep vmlinuz| cut -d'-' -f2,3|grep -v $(uname -r|cut -d'-' -f1,2))
 do
 	dpkg -l |grep ^ii| grep $KERNEL|awk -F' ' '{ print $2 }'|xargs -I % sh -c 'sudo apt remove -y %';
+	IS_REMOVED=$(($IS_REMOVED+1));
 done
 
-
-
+if [ $IS_REMOVED -gt 0 ]
+then
+	echo "Finish!!!"
+else
+	echo "Kernel's older versions not found!"
+fi
