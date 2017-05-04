@@ -26,7 +26,18 @@ done
 
 if [ $IS_REMOVED -gt 0 ]
 then
-	echo "Finish!!!"
+	echo "Removed old kernel's !!!"
 else
 	echo "Kernel's older versions not found!"
 fi
+
+echo "Updating start"
+
+sudo apt update;
+sudo apt dist-upgrade -y;
+sudo apt autoremove -y;
+sudo apt autoclean
+
+echo "Finish!!! :)"
+
+exit 0;
