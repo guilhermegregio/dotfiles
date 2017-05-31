@@ -9,6 +9,23 @@ function scp-king(){
 	fi
 }
 
+function git-remove-branch(){
+	if [ ! -z $1 ] 
+	then
+		git branch -D $1;
+		git push origin --delete $1
+	fi
+}
+
+function git-all-branchs(){
+	current=$(git rev-parse --abbrev-ref HEAD);
+	branch='deploy';
+
+	git branch | grep $branch | grep -v $current | xargs -rL 1 git branch -D
+
+	git branch -r | grep $branch | grep -v $current | cut -d '/' -f 3- | xargs -rL 1 git push origin --delete
+}
+
 function xml-reversa(){
 	if [[ -z "$2" ]] then
 		dsh -Ma -c grep -rin $1 /opt/wildfly/standalone/log/server.log
@@ -90,7 +107,7 @@ alias start-mongodb="docker run --rm -P -p 27017:27017 --name mongo_test eg_mong
 
 # postgresql
 alias psql-king-sandbox="psql -h 172.22.15.254 -p 5432 -U openfire -d openfire"
-alias psql-king-prod="psql -h dft-sa-king-db01.aws.dafiticorp.com.br -p 5432 -U openfire -d openfire"
+alias psql-king-prod="psql -h dft-sa-king-db02.aws.dafiticorp.com.br -p 5432 -U openfire -d openfire"
 
 # Remover kernels antigos
 alias remove-old-kernels='sh ~/.bin/remove_old_kernels.sh'
