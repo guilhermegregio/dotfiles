@@ -15,4 +15,4 @@
 	url = https://github.com/denysdovhan/oceanic-next-gnome-terminal.git
 [submodule "ssh"]
 	path = ssh
-	url = git@bitbucket.org:guilhermegregio/ssh.git
+	url = https://guilhermegregio@bitbucket.org/guilhermegregio/ssh.git
