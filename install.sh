@@ -15,6 +15,7 @@ if ! type vim >/dev/null 2>&1 ; then
 fi
 sudo apt-get install -y zsh xclip git git-flow tig vim-gtk tmux python-pip curl software-properties-common python-software-properties
 sudo apt-get install -y automake autoconf libreadline-dev libncurses-dev libssl-dev libyaml-dev libxslt-dev libffi-dev libtool unixodbc-dev
+pip install --upgrade pip
 pip install git+git://github.com/Lokaltog/powerline 
 pip install awscli
 
