@@ -1,18 +1,9 @@
 [submodule "vim/bundle/Vundle.vim"]
 	path = vim/bundle/Vundle.vim
 	url = https://github.com/gmarik/Vundle.vim.git
-[submodule "fonts"]
-	path = fonts
-	url = https://github.com/powerline/fonts.git
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = git://github.com/robbyrussell/oh-my-zsh.git
-[submodule "oceanic-next-iterm"]
-	path = oceanic-next-iterm
-	url = https://github.com/mhartington/oceanic-next-iterm.git
-[submodule "oceanic-next-gnome-terminal"]
-	path = oceanic-next-gnome-terminal
-	url = https://github.com/denysdovhan/oceanic-next-gnome-terminal.git
 [submodule "ssh"]
 	path = ssh
-	url = git@bitbucket.org:guilhermegregio/ssh.git
+	url = https://guilhermegregio@bitbucket.org/guilhermegregio/ssh.git

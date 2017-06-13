@@ -1,1 +1,4 @@
-[ -n "$PS1" ] && source ~/.bash_profile
+# Launch Zsh
+if [ -t 1 ]; then
+	exec zsh
+fi
