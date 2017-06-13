@@ -76,6 +76,8 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
+alias go-dft-workspace="cd ~/Documentos/workspace/dafiti/"
+
 # programs
 alias subl='open -a Sublime\ Text'
 alias idea='/opt/idea15/bin/idea.sh &'
