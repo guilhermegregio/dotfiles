@@ -38,24 +38,24 @@ function xml-reversa(){
 	fi
 }
 
-function xcopy () {
-	if [[ "$(uname -s)" == "Linux" ]]; then
-		/usr/bin/xclip -selection clipboard
-	else
-		/usr/bin/pbcopy
-	fi
-}
+#function xcopy () {
+#	if [[ "$(uname -s)" == "Linux" ]]; then
+#		/usr/bin/xclip -selection clipboard
+#	else
+#		/usr/bin/pbcopy
+#	fi
+#}
+#
+#function xpaste () {
+#	if [[ "$(uname -s)" == "Linux" ]]; then
+#		/usr/bin/xclip -selection clipboard -o
+#	else
+#		/usr/bin/pbpaste
+#	fi
+#}
 
-function xpaste () {
-	if [[ "$(uname -s)" == "Linux" ]]; then
-		/usr/bin/xclip -selection clipboard -o
-	else
-		/usr/bin/pbpaste
-	fi
-}
-
-alias pbcopy="xcopy"
-alias pbpaste="xpaste"
+#alias pbcopy="xcopy"
+#alias pbpaste="xpaste"
 
 function mkv2mp4 () {
 	avconv -i $1 -c:v libx264 "$1-output.mp4"
