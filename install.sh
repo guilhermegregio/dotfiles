@@ -56,6 +56,7 @@ ln -s "$HOME/dotfiles/bin" "$HOME/.bin"
 ln -s "$HOME/dotfiles/ssh" "$HOME/.ssh"
 ln -s "$HOME/dotfiles/ssh/pgpass" "$HOME/.pgpass"
 ln -s "$HOME/dotfiles/ssh/aws" "$HOME/.aws"
+ln -s "$HOME/dotfiles/ssh/npmrc" "$HOME/.npmrc"
 
 vim +PluginInstall +qall
 
