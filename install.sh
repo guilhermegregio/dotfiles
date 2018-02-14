@@ -13,6 +13,9 @@ fi;
 sh $dotfilespath/osx/install.sh
 sh $dotfilespath/debian/install.sh
 
+printf "Installing Oh My Zsh"
+curl -L http://install.ohmyz.sh | sh
+
 find $dotfilespath -mindepth 2 -name 'install.sh'|grep -v -E "(osx|ubuntu)"| while read FILE; do
     echo $FILE
     sh $FILE
@@ -29,14 +32,14 @@ else
 	mv "$HOME/.ssh" "$HOME/ssh-bkp-$TIMESTAMP"
 fi
 
-rm -rf "$HOME/.oh-my-zsh"
+
+
 rm -rf "$HOME/.backup"
 rm -rf "$HOME/.bin"
 rm -rf "$HOME/.pgpass"
 rm -rf "$HOME/.aws"
 
 mkdir "$HOME/.backup"
-ln -s "$HOME/dotfiles/oh-my-zsh" "$HOME/.oh-my-zsh"
 ln -s "$HOME/dotfiles/bin" "$HOME/.bin"
 ln -s "$HOME/dotfiles/ssh" "$HOME/.ssh"
 ln -s "$HOME/dotfiles/ssh/pgpass" "$HOME/.pgpass"
