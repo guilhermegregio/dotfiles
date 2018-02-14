@@ -7,7 +7,7 @@ dotrepo="https://github.com/guilhermegregio/dotfiles.git"
 
 if [ ! -d "$dotfilespath" ]; then
     printf "Fetching dotfiles...\n"
-    git clone --recursive "$dotrepo" "$dotfiles"
+    git clone --recursive "$dotrepo"
 fi;
 
 sh $dotfilespath/osx/install.sh
