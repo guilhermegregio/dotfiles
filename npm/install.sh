@@ -5,6 +5,8 @@ if ! which nvm &> /dev/null; then
     curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 fi
 
+source $HOME/.nvm/nvm.sh
+
 nvm install node
 
 npm install -g \
