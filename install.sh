@@ -21,9 +21,9 @@ find $dotfilespath -mindepth 2 -name 'install.sh'|grep -v -E "(osx|ubuntu)"| whi
     sh $FILE
 done
 
-find $fotfilespath/* -maxdepth 0 -type f -not -name "install.sh" -not -name "LICENSE" -not -name "README.md" | while read FILE; do
+find $dotfilespath/* -maxdepth 0 -type f -not -name "install.sh" -not -name "LICENSE" -not -name "README.md" | while read FILE; do
 	rm -f "$HOME/.${FILE##*/}"	
-	ln -s "$f" "$HOME/.${FILE##*/}"
+	ln -s "$FILE" "$HOME/.${FILE##*/}"
 done
 
 if [[ -L $HOME/.ssh ]]  && [[ "$(readlink $HOME/.ssh)" = "$HOME/dotfiles/ssh" ]] ; then
