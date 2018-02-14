@@ -3,9 +3,8 @@
 if ! which nvm &> /dev/null; then
     echo "Installing nvm"
     curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+		. $HOME/.nvm/nvm.sh
 fi
-
-source $HOME/.nvm/nvm.sh
 
 nvm install node
 
