@@ -2,6 +2,8 @@
 set nocompatible
 " }}}
 
+source $HOME/.vim/plug.vim
+
 " Syntax highlighting {{{
 set t_Co=256
 syntax on
@@ -46,7 +48,11 @@ set background=dark
 set clipboard=unnamedplus
 " Macros
 let @q='0f,xxd$a</a>0i<a href="pa">j@q'
-let @t='_O<tr height="22" valign="top"><td align="left"><font size="2" color="#0b2266" face="arial">jo</font></tr></tr>j_'
+let @t='_O<tr height="22" valign="top">
+<td align="left">
+<font size="2" color="#0b2266" face="arial">jo</font>
+</tr>
+</tr>j_'
 let @a='0wwi"f"xf"xf"xf"xf"xf"xf"xf"xf"xf"xf"xf"xj0@a'
 
 
@@ -64,32 +70,9 @@ autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
 " for css or scss
 autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
 
-set rtp+=~/dotfiles/vim/bundle/powerline/powerline/bindings/vim
 " Always show statusline
 set laststatus=2
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
 set t_Co=256
-
-" Plugins {{{
-filetype off
-
-set rtp+=~/dotfiles/vim/bundle/Vundle.vim
-call vundle#begin('~/dotfiles/vim/bundle')
-Plugin 'gmarik/Vundle.vim'
-" Adicionar outros plugins
-" Plugin ''
-Plugin 'maksimr/vim-jsbeautify' 
-Plugin 'mattn/emmet-vim'
-Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'digitaltoad/vim-jade'
-Plugin 'ervandew/supertab'
-Plugin 'powerline/powerline'
-Plugin 'yosiat/oceanic-next-vim'
-Plugin 'altercation/vim-colors-solarized'
-
-call vundle#end()
-filetype plugin indent on
-" }}}
 
 "colo OceanicNext
