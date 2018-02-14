@@ -26,18 +26,17 @@ find $dotfilespath/* -maxdepth 0 -type f -not -name "install.sh" -not -name "LIC
 	ln -s "$FILE" "$HOME/.${FILE##*/}"
 done
 
-if [[ -L $HOME/.ssh ]]  && [[ "$(readlink $HOME/.ssh)" = "$HOME/dotfiles/ssh" ]] ; then
-	rm -rf "$HOME/.ssh"
+if [ -L $HOME/.ssh ]; then
+    rm -rf "$HOME/.ssh"
 else
-	mv "$HOME/.ssh" "$HOME/ssh-bkp-$TIMESTAMP"
+    mv "$HOME/.ssh" "$HOME/ssh-bkp-$TIMESTAMP"
 fi
-
-
 
 rm -rf "$HOME/.backup"
 rm -rf "$HOME/.bin"
 rm -rf "$HOME/.pgpass"
 rm -rf "$HOME/.aws"
+rm -rf "$HOME/.npmrc"
 
 mkdir "$HOME/.backup"
 ln -s "$HOME/dotfiles/bin" "$HOME/.bin"
