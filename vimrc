@@ -2,7 +2,7 @@
 set nocompatible
 " }}}
 
-source $HOME/.vim/plug.vim
+source $HOME/dotfiles/vim/plug.vim
 
 " Syntax highlighting {{{
 set t_Co=256
