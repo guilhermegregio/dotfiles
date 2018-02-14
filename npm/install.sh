@@ -1,12 +1,12 @@
 #!/bin/bash
 
-if ! command -v nvm; then
+if [ ! -d $HOME/.nvm ]; then
     echo "Installing Nvm"
     curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
-		. $HOME/.nvm/nvm.sh
 fi
 
 echo "Nvm running"
+. $HOME/.nvm/nvm.sh
 
 nvm install node
 
