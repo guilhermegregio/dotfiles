@@ -2,6 +2,8 @@
 
 set -e
 
+command -v apt-get || exit
+
 dotfilespath="$HOME/dotfiles"
 
 rm -rf ~/Library/Application\ Support/Code/User/snippets
