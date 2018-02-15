@@ -1,0 +1,16 @@
+{
+  "workbench.welcome.enabled": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "typescript.check.npmIsInstalled": false,
+  "window.zoomLevel": 0,
+  "editor.tabSize": 2,
+  "cucumberautocomplete.steps": [
+      "test/step-defs/**/*.js",
+      "node_modules/walnutjs/src/step_defs/**/*.js"
+  ],
+  "emmet.includeLanguages": {
+      "javascript": "javascriptreact"
+  },
+  "explorer.confirmDelete": false,
+  "extensions.ignoreRecommendations": true
+}
