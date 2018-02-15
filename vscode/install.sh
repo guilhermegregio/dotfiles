@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-command -v code || exit
+command -v code || return
 
 dotfilespath="$HOME/dotfiles"
 
