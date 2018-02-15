@@ -12,5 +12,8 @@
       "javascript": "javascriptreact"
   },
   "explorer.confirmDelete": false,
-  "extensions.ignoreRecommendations": true
+"extensions.ignoreRecommendations": true,
+"flow.useNPMPackagedFlow": true,
+"javascript.validate.enable": false,
+"flow.pathToFlow": "/Users/guilherme.gregio/.nvm/versions/node/v9.2.0/bin/flow"
 }
