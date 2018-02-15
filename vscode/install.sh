@@ -2,7 +2,7 @@
 
 set -e
 
-command -v apt-get || exit
+command -v code || exit
 
 dotfilespath="$HOME/dotfiles"
 
