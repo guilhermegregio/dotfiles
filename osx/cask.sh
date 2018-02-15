@@ -1,43 +1,24 @@
-#!/bin/bash
-
-
-# to maintain cask .... 
-#     brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup` 
-
-
- #Install native apps
-#brew install caskroom/cask/brew-cask
-#brew tap caskroom/versions
+#!/usr/bin/env bash
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
-# drives
-brew cask install dropbox
-brew cask install google-drive
+brew cask install \
+    firefox \
+    google-chrome \
+    google-chrome-canary \
+    slack \
+    hyper \
+    iterm2 \
+    spectacle \
+    alfred \
+    visual-studio-code \
+    filezilla \
 
-# dev
-brew cask install alfred
-brew cask install iterm2
-brew cask install sublime-text3
-brew cask install atom
-brew cask install java
-brew cask install macvim
-brew cask install virtualbox
-brew cask install sts
-brew cask install mysqlworkbench
-brew cask install filezilla
-brew cask install vagrant
-brew cask install vagrant-manager
-brew cask install intellij-idea
-# browsers
-brew cask install google-chrome
-brew cask install google-chrome-canary
-brew cask install firefox
+# drives
+# brew cask install dropbox
+# brew cask install google-drive
 
 # less often
-brew cask install vlc
-brew cask install send-to-kindle
-brew cask install libreoffice
-
-brew cleanup --force
-rm -f -r /Library/Caches/Homebrew/*
+# brew cask install vlc
+# brew cask install send-to-kindle
+# brew cask install libreoffice
