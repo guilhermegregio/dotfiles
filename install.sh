@@ -16,7 +16,7 @@ sh $dotfilespath/debian/install.sh
 printf "Installing Oh My Zsh"
 curl -L http://install.ohmyz.sh | bash
 
-find $dotfilespath -mindepth 2 -name 'install.sh'|grep -v -E "(osx|ubuntu)"| while read FILE; do
+find $dotfilespath -mindepth 2 -name 'install.sh'|grep -v -E "(osx|debian)"| while read FILE; do
     echo $FILE
     sh $FILE
 done
