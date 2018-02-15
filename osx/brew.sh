@@ -7,6 +7,7 @@ brew install wget --enable-iri
 
 brew install \
     the_silver_searcher \
+    tig \
     ack \
     coreutils \
     fortune \
@@ -21,3 +22,9 @@ brew install \
     watchman \
     python \
     zsh \
+    docker \
+    docker-compose \
+    docker-machine \
+    xhyve \
+    docker-machine-driver-xhyve
+    kubernetes-cli \

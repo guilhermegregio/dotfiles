@@ -6,7 +6,7 @@ cd "$(dirname "${BASH_SOURCE}")" && source "../utils.sh"
 
 set_dock_preferences() {
 
-    execute 'defaults write com.apple.dock autohide -bool true' \
+    execute 'defaults write com.apple.dock autohide -bool false' \
         'Automatically hide/show the Dock'
 
     execute 'defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true' \
@@ -37,7 +37,7 @@ set_dock_preferences() {
     execute 'defaults write com.apple.dock showhidden -bool true' \
         'Make icons of hidden applications translucent'
 
-    execute 'defaults write com.apple.dock tilesize -i' \
+    execute 'defaults write com.apple.dock tilesize -int 46' \
         'Set icon size'
 
 }
