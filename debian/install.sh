@@ -13,7 +13,6 @@ apt-get install \
   git-flow \
   tig \
   software-properties-common  \
-  python-software-properties \
   python \
   fluxbox \
   xclip \
