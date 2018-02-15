@@ -13,7 +13,7 @@ fi;
 sh $dotfilespath/osx/install.sh
 sh $dotfilespath/debian/install.sh
 
-printf "Installing Oh My Zsh"
+echo "Installing Oh My Zsh"
 curl -L http://install.ohmyz.sh | bash
 
 find $dotfilespath -mindepth 2 -name 'install.sh'|grep -v -E "(osx|debian)"| while read FILE; do
@@ -21,7 +21,7 @@ find $dotfilespath -mindepth 2 -name 'install.sh'|grep -v -E "(osx|debian)"| whi
     sh $FILE
 done
 
-printf "Configuring .dotfiles"
+echo "Configuring .dotfiles"
 find $dotfilespath/* -maxdepth 0 -type f -not -name "install.sh" -not -name "LICENSE" -not -name "README.md" | while read FILE; do
 	rm -f "$HOME/.${FILE##*/}"	
 	ln -s "$FILE" "$HOME/.${FILE##*/}"
