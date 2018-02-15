@@ -113,3 +113,7 @@ alias psql-king-prod="psql -h dft-sa-king-db02.aws.dafiticorp.com.br -p 5432 -U 
 
 # Remover kernels antigos
 alias remove-old-kernels='sh ~/.bin/remove_old_kernels.sh'
+
+# docker
+alias docker-stop-all='docker rm -f $(docker ps -a -q)'
+alias docker-rmi-none='docker rmi $(docker images -f "dangling=true" -q)'
