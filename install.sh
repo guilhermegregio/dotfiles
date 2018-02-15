@@ -7,14 +7,14 @@ dotrepo="https://github.com/guilhermegregio/dotfiles.git"
 
 if [ ! -d "$dotfilespath" ]; then
     printf "Fetching dotfiles...\n"
-    git clone --recursive "$dotrepo"
+    git clone --recursive "$dotrepo" "$dotfilespath"
 fi;
 
 sh $dotfilespath/osx/install.sh
 sh $dotfilespath/debian/install.sh
 
 printf "Installing Oh My Zsh"
-curl -L http://install.ohmyz.sh | sh
+curl -L http://install.ohmyz.sh | bash
 
 find $dotfilespath -mindepth 2 -name 'install.sh'|grep -v -E "(osx|ubuntu)"| while read FILE; do
     echo $FILE
@@ -26,10 +26,12 @@ find $dotfilespath/* -maxdepth 0 -type f -not -name "install.sh" -not -name "LIC
 	ln -s "$FILE" "$HOME/.${FILE##*/}"
 done
 
-if [ -L $HOME/.ssh ]; then
-    rm -rf "$HOME/.ssh"
-else
-    mv "$HOME/.ssh" "$HOME/ssh-bkp-$TIMESTAMP"
+if [ -d "$HOME/.ssh" ]; then
+    if [ -L $HOME/.ssh ]; then
+        rm -rf "$HOME/.ssh"
+    else
+        mv "$HOME/.ssh" "$HOME/ssh-bkp-$TIMESTAMP"
+    fi
 fi
 
 rm -rf "$HOME/.backup"
