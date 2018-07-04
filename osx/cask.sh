@@ -5,7 +5,6 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 brew cask install \
     firefox \
     google-chrome \
-    google-chrome-canary \
     slack \
     hyper \
     iterm2 \
