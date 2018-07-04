@@ -1,19 +1,34 @@
 {
-  "workbench.welcome.enabled": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "typescript.check.npmIsInstalled": false,
-  "window.zoomLevel": 0,
-  "editor.tabSize": 2,
-  "cucumberautocomplete.steps": [
-      "test/step-defs/**/*.js",
-      "node_modules/walnutjs/src/step_defs/**/*.js"
-  ],
-  "emmet.includeLanguages": {
-      "javascript": "javascriptreact"
-  },
-  "explorer.confirmDelete": false,
-"extensions.ignoreRecommendations": true,
-"flow.useNPMPackagedFlow": true,
-"javascript.validate.enable": false,
-"flow.pathToFlow": "/Users/guilherme.gregio/.nvm/versions/node/v9.2.0/bin/flow"
+    "workbench.welcome.enabled": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "typescript.check.npmIsInstalled": false,
+    "window.zoomLevel": 0,
+    "editor.tabSize": 2,
+    "cucumberautocomplete.steps": [
+        "test/step-defs/**/*.js",
+        "node_modules/walnutjs/src/step_defs/**/*.js"
+    ],
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "explorer.confirmDelete": false,
+    "extensions.ignoreRecommendations": true,
+    "flow.useNPMPackagedFlow": true,
+    "javascript.validate.enable": false,
+    "flow.pathToFlow": "/Users/guilherme.gregio/.nvm/alias/current/bin/flow",
+    "[javascript]": {
+        "editor.formatOnSave": false
+    },
+    "[elm]": {
+        "editor.formatOnSave": true
+    },
+    "prettier.eslintIntegration": true,
+    "prettier.ignorePath": "/Users/guilherme.gregio/.prettierignore",
+    "elm.formatCommand": "/Users/guilherme.gregio/.nvm/alias/current/bin/elm-format",
+    "typescript.format.enable": false,
+    "material-icon-theme.files.associations": {
+        "*.service.ts": "typescript"
+    },
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
 }

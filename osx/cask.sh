@@ -14,6 +14,8 @@ brew cask install \
     visual-studio-code \
     filezilla \
 
+brew tap caskroom/fonts
+brew cask install font-fira-code
 # drives
 # brew cask install dropbox
 # brew cask install google-drive

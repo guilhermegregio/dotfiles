@@ -11,16 +11,27 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'maksimr/vim-jsbeautify' 
-Plug 'mattn/emmet-vim'
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
-Plug 'digitaltoad/vim-jade'
 Plug 'ervandew/supertab'
-Plug 'powerline/powerline'
+Plug 'moll/vim-node'
+
+Plug 'scrooloose/syntastic'
+Plug 'maksimr/vim-jsbeautify' 
+Plug 'mattn/emmet-vim'
+Plug 'digitaltoad/vim-jade'
+Plug 'mxw/vim-jsx'
+Plug 'ianks/vim-tsx'
+Plug 'leafgarland/typescript-vim'
+Plug 'pangloss/vim-javascript'
+Plug 'elmcast/elm-vim'
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
+
+Plug 'editorconfig/editorconfig-vim'
+
+Plug 'bling/vim-airline'
 Plug 'yosiat/oceanic-next-vim'
 Plug 'altercation/vim-colors-solarized'
-
 
 filetype plugin indent on                   " required!
 call plug#end()

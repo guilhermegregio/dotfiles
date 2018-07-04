@@ -68,9 +68,13 @@
 	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
 
 
-
 [merge]
 	tool = vimdiff
+
+
+
+[mergetool]
+	keepBackup = false
 
 
 

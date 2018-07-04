@@ -45,7 +45,10 @@ set fillchars+=stl:\ ,stlnc:\
 set term=xterm-256color
 set termencoding=utf-8
 set background=dark
-set clipboard=unnamedplus
+"set clipboard=unnamedplus
+
+" Macros
+let @t="A / labels:\"front-end\"j@t"
 
 " CtrlP Config
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files . -co --exclude-standard|egrep -v "\.(git|svn|jpg|jpeg|png|gif)$"']
