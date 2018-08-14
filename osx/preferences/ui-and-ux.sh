@@ -55,10 +55,10 @@ set_ui_and_ux_preferences() {
     execute 'defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true' \
         'Expand print panel by default'
 
-    execute 'sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "GuilhermeOSX" &&
-             sudo scutil --set ComputerName "GuilhermeOSX" &&
-             sudo scutil --set HostName "GuilhermeOSX" &&
-             sudo scutil --set LocalHostName "GuilhermeOSX"' \
+    execute 'sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "DaniOSX" &&
+             sudo scutil --set ComputerName "DaniOSX" &&
+             sudo scutil --set HostName "DaniOSX" &&
+             sudo scutil --set LocalHostName "DaniOSX"' \
         'Set computer name'
 
     execute "sudo systemsetup -setrestartfreeze on" \
