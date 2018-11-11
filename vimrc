@@ -50,23 +50,18 @@ set background=dark
 " Macros
 let @t="A / labels:\"front-end\"j@t"
 
+
+
+" Multi Cursors Config
+let g:Multiulti_cursor_use_default_mapping=0
+
 " CtrlP Config
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files . -co --exclude-standard|egrep -v "\.(git|svn|jpg|jpeg|png|gif)$"']
 
-" CtrlP Config
-map <C-n> :NERDTreeToggle<CR>
-
-" JSBEAUTIFY shorcuts
-" for javascript
-autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
-" for html
-autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
-" for css or scss
-autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
 
 " Always show statusline
 set laststatus=2
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
 set t_Co=256
 
-"colo OceanicNext
+colo dracula

@@ -35,6 +35,14 @@ if [ -d "$HOME/.ssh" ]; then
     fi
 fi
 
+if [ -d "$HOME/.i3" ]; then
+    if [ -L $HOME/.i3 ]; then
+        rm -rf "$HOME/.i3"
+    else
+        mv "$HOME/.i3" "$HOME/i3-bkp-$TIMESTAMP"
+    fi
+fi
+
 rm -rf "$HOME/.backup"
 rm -rf "$HOME/.bin"
 rm -rf "$HOME/.pgpass"
@@ -44,9 +52,10 @@ rm -rf "$HOME/.npmrc"
 mkdir "$HOME/.backup"
 ln -s "$HOME/dotfiles/bin" "$HOME/.bin"
 ln -s "$HOME/dotfiles/ssh" "$HOME/.ssh"
+ln -s "$HOME/dotfiles/i3" "$HOME/.i3"
 ln -s "$HOME/dotfiles/ssh/pgpass" "$HOME/.pgpass"
 ln -s "$HOME/dotfiles/ssh/aws" "$HOME/.aws"
 ln -s "$HOME/dotfiles/ssh/npmrc" "$HOME/.npmrc"
 
-chsh -s /bin/zsh
-echo "Finish!!!"
+#chsh -s /bin/zsh
+#echo "Finish!!!"

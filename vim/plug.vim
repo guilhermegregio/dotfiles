@@ -12,9 +12,11 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'kien/ctrlp.vim'
-Plug 'scrooloose/nerdtree'
+Plug 'francoiscabrol/ranger.vim'
 Plug 'ervandew/supertab'
 Plug 'moll/vim-node'
+Plug 'wellle/targets.vim'
+Plug 'terryma/vim-multiple-cursors'
 
 Plug 'scrooloose/syntastic'
 Plug 'maksimr/vim-jsbeautify' 
@@ -32,6 +34,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'bling/vim-airline'
 Plug 'yosiat/oceanic-next-vim'
 Plug 'altercation/vim-colors-solarized'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 filetype plugin indent on                   " required!
 call plug#end()
