@@ -112,4 +112,6 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
+ VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
+
 eval $(thefuck --alias)

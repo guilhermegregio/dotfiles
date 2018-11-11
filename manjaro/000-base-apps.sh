@@ -48,6 +48,7 @@ python-pip
 ## elm
 elm-platform-bin
 termite-git
+kitty
 playerctl
 ## wallpaper
 nitrogen
