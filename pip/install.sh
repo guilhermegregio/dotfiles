@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-if ! command -v pip; then
-    echo "Installing Pip"
-    curl --silent --show-error --retry 5 https://bootstrap.pypa.io/get-pip.py | python
-fi
+#if ! command -v pip; then
+#    echo "Installing Pip"
+#    curl --silent --show-error --retry 5 https://bootstrap.pypa.io/get-pip.py | python
+#fi
 
 echo "Pip running"
 
