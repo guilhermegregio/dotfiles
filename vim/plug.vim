@@ -15,6 +15,8 @@ Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'ervandew/supertab'
 Plug 'moll/vim-node'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'wellle/targets.vim'
 
 Plug 'scrooloose/syntastic'
 Plug 'maksimr/vim-jsbeautify' 
@@ -32,6 +34,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'bling/vim-airline'
 Plug 'yosiat/oceanic-next-vim'
 Plug 'altercation/vim-colors-solarized'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 filetype plugin indent on                   " required!
 call plug#end()

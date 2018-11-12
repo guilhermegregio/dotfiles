@@ -9,7 +9,7 @@ ca-certificates
 git
 tig
 ## search text
-acw
+ack
 the_silver_searcher
 ## URL retrieval utility
 curl

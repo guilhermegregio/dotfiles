@@ -6,7 +6,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="bira"
+ZSH_THEME="avit"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -112,6 +112,6 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
- VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
+VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
 
 eval $(thefuck --alias)
