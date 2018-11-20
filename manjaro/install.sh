@@ -42,12 +42,12 @@
 #	yay
 #	zsh 
 
-if pacman -Qi $package &> /dev/null; then
+if pacman -Qi yay &> /dev/null; then
   echo "################################################################"
   echo "################## "$package" is already installed"
   echo "################################################################"
 else
-  pacman -S --noconfirm yay
+  sudo pacman -S --noconfirm yay
 fi
 
 yay -Syu --noconfirm
