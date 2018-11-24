@@ -20,6 +20,7 @@ Plug 'wellle/targets.vim'
 Plug 'terryma/vim-multiple-cursors'
 
 Plug 'scrooloose/syntastic'
+Plug 'ternjs/tern_for_vim' 
 Plug 'mattn/emmet-vim'
 Plug 'mxw/vim-jsx'
 Plug 'ianks/vim-tsx'
@@ -27,6 +28,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'elmcast/elm-vim'
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
+Plug 'w0rp/ale'
 
 Plug 'editorconfig/editorconfig-vim'
 
