@@ -1,4 +1,5 @@
 " Make vim more useful {{{
+let mapleader=","
 set nocompatible
 " }}}
 
@@ -58,6 +59,7 @@ let g:Multiulti_cursor_use_default_mapping=0
 " CtrlP Config
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files . -co --exclude-standard|egrep -v "\.(git|svn|jpg|jpeg|png|gif)$"']
 
+map <leader>p :NERDTreeToggle<CR>
 
 " Always show statusline
 set laststatus=2
@@ -86,6 +88,15 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#syntastic#enabled = 1
 set laststatus=2
+
+" Return to the same line you left off at
+augroup line_return
+	au!
+	au BufReadPost *
+		\ if line("'\"") > 0 && line("'\"") <= line("$") |
+		\	execute 'normal! g`"zvzz' |
+		\ endif
+augroup END
 
 "colo OceanicNext
 syntax on
