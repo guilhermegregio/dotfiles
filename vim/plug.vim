@@ -18,6 +18,7 @@ Plug 'ervandew/supertab'
 Plug 'moll/vim-node'
 Plug 'wellle/targets.vim'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
 Plug 'scrooloose/syntastic'
 Plug 'ternjs/tern_for_vim' 
