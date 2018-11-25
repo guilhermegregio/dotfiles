@@ -14,24 +14,31 @@ call plug#begin('~/.vim/plugged')
 Plug 'kien/ctrlp.vim'
 Plug 'francoiscabrol/ranger.vim'
 Plug 'scrooloose/nerdtree'
+
 Plug 'ervandew/supertab'
-Plug 'moll/vim-node'
 Plug 'wellle/targets.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
 Plug 'scrooloose/syntastic'
 Plug 'ternjs/tern_for_vim' 
-Plug 'mattn/emmet-vim'
-Plug 'mxw/vim-jsx'
-Plug 'ianks/vim-tsx'
-Plug 'leafgarland/typescript-vim'
-Plug 'pangloss/vim-javascript'
-Plug 'elmcast/elm-vim'
-Plug 'prettier/vim-prettier', { 'do': 'npm install' }
-Plug 'w0rp/ale'
 
+Plug 'tpope/vim-surround'
+
+Plug 'moll/vim-node'
+
+Plug 'leafgarland/typescript-vim'
+Plug 'ianks/vim-tsx'
+
+Plug 'mattn/emmet-vim'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+
+Plug 'elmcast/elm-vim'
+
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 Plug 'editorconfig/editorconfig-vim'
+Plug 'w0rp/ale'
 
 Plug 'bling/vim-airline'
 Plug 'bling/vim-bufferline'
