@@ -466,3 +466,4 @@ mode "$mode_gaps_outer" {
 }
 
 
+#exec_always --no-startup-id $HOME/.config/polybar/launch.sh
