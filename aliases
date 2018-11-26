@@ -3,7 +3,7 @@ function mkv2mp4 () {
 }
 
 # Shortcuts
-alias p="cd ~/Documents/easynvest"
+alias p="cd ~/Projetos"
 alias g="git"
 alias h="history"
 alias j="jobs"
