@@ -50,6 +50,7 @@ rm -rf "$HOME/.aws"
 rm -rf "$HOME/.npmrc"
 
 mkdir "$HOME/.backup"
+mkdir -p "$HOME/Projects"
 ln -s "$HOME/dotfiles/bin" "$HOME/.bin"
 ln -s "$HOME/dotfiles/ssh" "$HOME/.ssh"
 ln -s "$HOME/dotfiles/i3" "$HOME/.i3"

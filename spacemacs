@@ -368,7 +368,6 @@ you should place your code here."
 
     ;; prettier settings
     (setq prettier-js-args '(
-                             "--no-semi"
                              "--single-quote"
                              ))
     (add-hook 'javascript-mode-hook 'prettier-js-mode)

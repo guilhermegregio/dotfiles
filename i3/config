@@ -170,6 +170,19 @@ set $ws6 6
 set $ws7 "7:"
 set $ws8 "8:"
 
+# define workspaces output
+workspace $ws1 output primary
+workspace $ws2 output primary
+workspace $ws3 output primary
+workspace $ws4 output primary
+workspace $ws5 output primary
+workspace $ws6 output primary
+workspace $ws7 output primary
+workspace $ws8 output primary
+
+# move workspace output
+bindsym $mod+Ctrl+space move workspace to left
+bindsym $mod+mod1+space exec i3-msg '[class=".*"]' move workspace to output primary
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -464,4 +477,5 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
+exec --no-startup-id xrandr --output eDP1 --auto --output HDMI1 --auto --right-of eDP1
 

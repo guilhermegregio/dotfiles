@@ -26,6 +26,7 @@ nmap <F3> :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
 imap <F3> <Esc>:set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
 nmap <F2> :.w !pbcopy<CR><CR>
 vmap <F2> :w !pbcopy<CR><CR>
+vmap <C-c> y: call system("xclip -i -selection clipboard", getreg("\""))<CR>
 
 hi    Search ctermbg=green ctermfg=black
 hi IncSearch ctermbg=black ctermfg=cyan

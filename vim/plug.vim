@@ -27,6 +27,7 @@ Plug 'ianks/vim-tsx'
 Plug 'leafgarland/typescript-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'elmcast/elm-vim'
+Plug 'joukevandermaas/vim-ember-hbs'
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 
 Plug 'editorconfig/editorconfig-vim'
