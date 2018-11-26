@@ -50,7 +50,7 @@ ZSH_THEME="dracula"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-flow ng docker docker-compose)
+plugins=(tmux git git-flow ng docker docker-compose)
 
 # User configuration
 export GRADLE_HOME="/opt/gradle-2.14"

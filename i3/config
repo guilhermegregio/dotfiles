@@ -323,6 +323,7 @@ exec --no-startup-id start_conky_maia
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
+exec --no-startup-id ibus-daemon
 
 # Desktop Apps
 exec --no-startup-id whatsapp-web-desktop 
@@ -479,3 +480,4 @@ mode "$mode_gaps_outer" {
 
 exec --no-startup-id xrandr --output eDP1 --auto --output HDMI1 --auto --right-of eDP1
 
+#exec_always --no-startup-id $HOME/.config/polybar/launch.sh
