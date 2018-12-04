@@ -37,7 +37,10 @@ Plug 'joukevandermaas/vim-ember-hbs'
 
 Plug 'elmcast/elm-vim'
 
+Plug 'iamcco/markdown-preview.vim'
+
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
+Plug 'sbdchd/neoformat'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'w0rp/ale'
 
