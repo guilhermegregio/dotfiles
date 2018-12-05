@@ -11,6 +11,9 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'benmills/vimux'
+Plug 'christoomey/vim-tmux-navigator'
+
 Plug 'kien/ctrlp.vim'
 Plug 'francoiscabrol/ranger.vim'
 Plug 'scrooloose/nerdtree'

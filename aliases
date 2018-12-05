@@ -63,5 +63,8 @@ alias vimrc='vim ~/dotfiles/vimrc'
 alias vimplug='vim ~/dotfiles/vim/plug.vim'
 alias viminstallplug='vim +PlugInstall +qall'
 
+alias vimtmux='vim ~/dotfiles/tmux.conf'
+alias vimzsh='vim ~/dotfiles/zshrc'
+
 alias ssh-easynvest-dev="ssh easynvest-dev"
 
