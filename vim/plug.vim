@@ -40,7 +40,7 @@ Plug 'joukevandermaas/vim-ember-hbs'
 
 Plug 'elmcast/elm-vim'
 
-Plug 'iamcco/markdown-preview.vim'
+Plug 'shime/vim-livedown', { 'do': 'npm install' }
 
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 Plug 'sbdchd/neoformat'
