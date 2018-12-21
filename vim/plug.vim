@@ -41,6 +41,7 @@ Plug 'joukevandermaas/vim-ember-hbs'
 Plug 'elmcast/elm-vim'
 
 Plug 'shime/vim-livedown', { 'do': 'npm install' }
+Plug 'dhruvasagar/vim-table-mode'
 
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 Plug 'sbdchd/neoformat'
