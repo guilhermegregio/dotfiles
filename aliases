@@ -7,6 +7,8 @@ alias p="cd ~/Projects"
 alias g="git"
 alias h="history"
 alias j="jobs"
+alias v="vim"
+alias vi="vim"
 
 # Easier navigation: .., ..., ~ and -
 alias ..="cd .."
