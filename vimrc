@@ -60,8 +60,6 @@ let g:Multiulti_cursor_use_default_mapping=0
 " CtrlP Config
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files . -co --exclude-standard|egrep -v "\.(git|svn|jpg|jpeg|png|gif)$"']
 
-map <leader>p :NERDTreeToggle<CR>
-
 " Always show statusline
 set laststatus=2
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
@@ -81,6 +79,7 @@ let g:multi_cursor_skip_key            = '<C-x>'
 let g:multi_cursor_quit_key            = '<Esc>'
 
 " Config to NERDTree
+map <leader>p :NERDTreeToggle<CR>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
@@ -112,6 +111,7 @@ nnoremap <Leader>7 :7b<CR>
 nnoremap <Leader>8 :8b<CR>
 nnoremap <Leader>9 :9b<CR>
 nnoremap <Leader>0 :10b<CR>
+nnoremap <Leader>bd :BufOnly<CR>
 
 " Config Emmet
 let g:user_emmet_leader_key='<Tab>'
@@ -124,13 +124,18 @@ let g:user_emmet_settings = {
 "Prettier config
 let g:prettier#quickfix_enabled = 0
 let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.yaml,*.html,*.md Neoformat
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.yaml,*.html PrettierAsync
 
 " Livedown config
 let g:livedown_autorun = 1
 let g:livedown_open = 1
 let g:livedown_port = 1337
 let g:livedown_browser = "google-chrome-stable"
+
+" Table
+let g:table_mode_corner='|'
+
+set path +=node_modules;~
 
 "colo OceanicNext
 syntax on

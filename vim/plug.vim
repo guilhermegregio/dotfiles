@@ -22,9 +22,12 @@ Plug 'ervandew/supertab'
 Plug 'wellle/targets.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'schickling/vim-bufonly'
 
 Plug 'scrooloose/syntastic'
 Plug 'ternjs/tern_for_vim' 
+
+Plug 'ludovicchabant/vim-gutentags'
 
 Plug 'tpope/vim-surround'
 
