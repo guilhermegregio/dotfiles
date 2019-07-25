@@ -131,15 +131,23 @@ let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.yaml,*.html PrettierAsync
 
 " Livedown config
-let g:livedown_autorun = 1
-let g:livedown_open = 1
-let g:livedown_port = 1337
 let g:livedown_browser = "google-chrome-stable"
+
+let g:vimwiki_list = [{'path': '~/vimwiki/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
 
 " Table
 let g:table_mode_corner='|'
 
 set path +=node_modules;~
+
+" Languagetool
+set spelllang=pt-BR
+
+nnoremap <Leader>lc :LanguageToolCheck<CR>
+nnoremap <Leader>lcc :LanguageToolClear<CR>
+nnoremap <Leader>lcn :lne<CR>
+nnoremap <Leader>lco :lopen<CR>
 
 "colo OceanicNext
 syntax on

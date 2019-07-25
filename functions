@@ -1,43 +1,33 @@
-# find shorthand
-function f() {
-    find . -name "$1"
+
+function performance(){
+  URL=$1
+  DIR=$2
+  NAME=$3
+
+  DEFAULT_NAME=${1//[^[:alnum:]]/}
+
+  FILE_NAME=${NAME:-"$DEFAULT_NAME"}
+  DIRNAME=${DIR:-"$HOME/report-performance"}
+
+  mkdir -p $DIRNAME
+
+  echo Performance start: "$URL"
+
+  lighthouse \
+    --chrome-flags="--headless --disable-gpu --no-sandbox" \
+    "$URL" \
+    --output json \
+    --output html \
+    --output-path="$DIRNAME/$FILE_NAME" \
+    --throttling.cpuSlowdownMultiplier=5 \
+    --throttling.throughputKbps=780 \
+    --emulated-form-factor=mobile \
+    --view
+
+  echo "Performance end :) \n"
+
+  echo "Report JSON saved in $DIRNAME/$FILE_NAME.report.json"
+  echo "Report HTML saved in $DIRNAME/$FILE_NAME.report.html"
+
 }
 
-# Launch installed browsers for a specific URL
-# Usage: browsers "http://www.google.com"
-function browsers(){
-	chrome $1
-	firefox $1
-	safari $1	
-}
-
-
-# `s` with no arguments opens the current directory in Sublime Text, otherwise
-# opens the given location
-function st() {
-        if [ $# -eq 0 ]; then
-                subl .
-        else
-                subl "$@"
-        fi
-}
-
-# `v` with no arguments opens the current directory in Vim, otherwise opens the
-# given location
-function v() {
-        if [ $# -eq 0 ]; then
-                vim .
-        else
-                vim "$@"
-        fi
-}
-
-# 'ws' with no arguments opens the current directory in Web Storm, otherwise
-# opens tthe given location
-function ws() {
-        if [ $# -eq 0 ]; then
-                webstorm .
-        else
-                webstorm "$@"
-        fi
-}

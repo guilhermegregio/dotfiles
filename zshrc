@@ -60,6 +60,7 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 
 
 source $HOME/dotfiles/aliases
+source $HOME/dotfiles/functions
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -115,3 +116,6 @@ load-nvmrc
 VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
 
 eval $(thefuck --alias)
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
