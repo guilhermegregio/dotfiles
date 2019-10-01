@@ -37,9 +37,6 @@ alias l='ls -CF'
 # recording window
 alias gravar='sh ~/.bin/recording-window.sh'
 
-# ip
-alias ip="printf  '%s\n%s\n' $(ifconfig en0 2> /dev/null| grep 'inet ' | sed -e 's/:/ /' | awk '{print $2}')"
-
 # updates
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g;'
 
