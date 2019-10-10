@@ -47,8 +47,7 @@ bindsym $mod+Shift+q kill
 # start program launcher
 #bindsym $mod+d exec --no-startup-id dmenu_recency
 #bindsym $mod+d exec --no-startup-id rofi -show run -lines 3 -eh 2 -width 100 -padding 800 -opacity "85" -bw 0 -bc "$bg-color" -bg "#000000" -fg "$text-color" -hlbg "#000000" -hlfg "#000000" -font "Fira Code Regular 18"
-bindsym $mod+d exec rofi -show run -lines 3 -eh 1 -width 100 -padding 800 -theme ~/.config/rasi/config.rasi -font "System San Francisco Display 18" -fullscreen
-bindsym Shift+space exec rofi -show combi -font "hack 10" -theme ~/.config/rasi/config.rasi
+bindsym $mod+d exec rofi -show combi -font "hack 10" -theme ~/.config/rasi/config.rasi
 
 
 
