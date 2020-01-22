@@ -1,0 +1,20 @@
+pane	0|Wiki	1	:</>	1	:*	1	:/home/guilherme	1	zsh	:
+pane	1|Microfrontend-root-sample	1	:</>	1	:*	1	:/home/guilherme/Projects/microfrontend-singlespa-root-sample	1	zsh	:
+pane	1|Microfrontend-root-sample	1	:</>	1	:*	2	:/home/guilherme/Projects/microfrontend-singlespa-root-sample/packages/starwars-sample-app	0	zsh	:
+pane	2|Webpack-Config	1	:</>	1	:*	1	:/home/guilherme/Projects/microfrontend-webpack-config	1	zsh	:
+pane	3|UI-Styleguide	1	:</>	1	:*	1	:/home/guilherme/Projects/ui-styleguide	1	zsh	:
+pane	4|FRIDAY	1	:</>	1	:*	1	:/home/guilherme/Projects/F.R.I.D.A.Y	1	zsh	:
+pane	9|Dotfiles	1	:</>	1	:*	1	:/home/guilherme/dotfiles	1	zsh	:
+pane	Default	1	:zsh	1	:*	1	:/home/guilherme/dotfiles	1	zsh	:
+pane	Terraform	1	:zsh	1	:*	1	:/home/guilherme/Projects/terraform-infrastructure-frontend-sample	1	zsh	:
+pane	Terraform	2	:zsh	0	:-	1	:/home/guilherme/Projects/terraform-infrastructure-frontend-sample	1	zsh	:
+window	0|Wiki	1	1	:*	c63e,174x46,0,0,1
+window	1|Microfrontend-root-sample	1	1	:*	e880,174x46,0,0[174x37,0,0,2,174x8,0,38,3]
+window	2|Webpack-Config	1	1	:*	c644,174x46,0,0,7
+window	3|UI-Styleguide	1	1	:*	c645,174x46,0,0,8
+window	4|FRIDAY	1	1	:*	634f,174x46,0,0,10
+window	9|Dotfiles	1	1	:*	6350,174x46,0,0,11
+window	Default	1	1	:*	6351,174x46,0,0,12
+window	Terraform	1	1	:*	6357,174x46,0,0,18
+window	Terraform	2	0	:-	6358,174x46,0,0,19
+state	0|Wiki	Terraform
