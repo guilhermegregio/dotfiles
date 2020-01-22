@@ -14,7 +14,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'benmills/vimux'
 Plug 'christoomey/vim-tmux-navigator'
 
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'francoiscabrol/ranger.vim'
 Plug 'scrooloose/nerdtree'
 
@@ -32,6 +32,7 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'tpope/vim-surround'
 
 Plug 'moll/vim-node'
+Plug 'tomarrell/vim-npr'
 
 Plug 'leafgarland/typescript-vim'
 Plug 'ianks/vim-tsx'

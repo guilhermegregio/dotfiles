@@ -219,6 +219,7 @@ assign [class="Google-chrome"] $ws3
 assign [class="Firefox"] $ws3
 assign [class="whats-app-nativefier-7bbd2c"] $ws6
 assign [class="Slack"] $ws7
+for_window [title=".*DevTools.*" ] move to workspace $ws1
 for_window [class="Spotify"] move to workspace $ws8
 
 
