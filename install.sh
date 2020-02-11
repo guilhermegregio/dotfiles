@@ -5,21 +5,21 @@ TIMESTAMP=$(date +%s);
 dotfilespath="$HOME/dotfiles"
 dotrepo="https://github.com/guilhermegregio/dotfiles.git"
 
-if [ ! -d "$dotfilespath" ]; then
-    printf "Fetching dotfiles...\n"
-    git clone --recursive "$dotrepo" "$dotfilespath"
-fi;
+#if [ ! -d "$dotfilespath" ]; then
+#    printf "Fetching dotfiles...\n"
+#    git clone --recursive "$dotrepo" "$dotfilespath"
+#fi;
+#
+#sh $dotfilespath/osx/install.sh
+#sh $dotfilespath/debian/install.sh
 
-sh $dotfilespath/osx/install.sh
-sh $dotfilespath/debian/install.sh
+#echo "Installing Oh My Zsh"
+#curl -L http://install.ohmyz.sh | bash
 
-echo "Installing Oh My Zsh"
-curl -L http://install.ohmyz.sh | bash
-
-find $dotfilespath -mindepth 2 -name 'install.sh'|grep -v -E "(osx|debian|os)"| while read FILE; do
-    echo "Running: $FILE"
-    sh $FILE
-done
+#find $dotfilespath -mindepth 2 -name 'install.sh'|grep -v -E "(osx|pip|nvm|vscode|manjaro|debian|os)"| while read FILE; do
+#    echo "Running: $FILE"
+#    sh $FILE
+#done
 
 echo "Configuring .dotfiles"
 find $dotfilespath/* -maxdepth 0 -type f -not -name "install.sh" -not -name "LICENSE" -not -name "README.md" | while read FILE; do
