@@ -50,7 +50,18 @@ ZSH_THEME="dracula"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(tmux git git-flow ng docker docker-compose zsh-iterm-touchbar)
+
+# your zsh_history file location
+ZSH_HISTORY_FILE="${HOME}/.zsh_history"
+# your git project for housing your zsh_history file
+ZSH_HISTORY_PROJ="${HOME}/.zsh_history_proj"
+# your encrypted zsh_history file location
+ZSH_HISTORY_FILE_ENC="${ZSH_HISTORY_PROJ}/zsh_history"
+# your default message when pushing to $ZSH_HISTORY_PROJ
+GIT_COMMIT_MSG="latest $(date)"
+
+# Plugins zsh
+plugins=(tmux git git-flow ng docker docker-compose zsh-iterm-touchbar history-sync)
 
 # User configuration
 export GRADLE_HOME="/opt/gradle-2.14"
