@@ -6,6 +6,8 @@
 	<true/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
+	<key>ApplePressAndHoldEnabled</key>
+	<false/>
 	<key>AppleScrollAnimationEnabled</key>
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
@@ -107,7 +109,7 @@
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>57 0 1623 1027 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>2640 511 955 516 1680 -30 1920 1057 </string>
+	<string>2640 -30 955 1057 1680 -30 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>2640 -18 955 516 1680 -30 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -853,6 +855,7 @@
 		<string>3.2.5</string>
 		<string>3.3.4</string>
 		<string>3.3.7</string>
+		<string>3.3.8</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
@@ -873,9 +876,9 @@
 	<key>NoSyncInstallationId</key>
 	<string>DEFE2693-FC3E-4189-84E8-A74C759843E0</string>
 	<key>NoSyncLastTipTime</key>
-	<real>602782848.53403199</real>
+	<real>603214815.44876897</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>79</integer>
+	<integer>80</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1632,15 +1635,17 @@
 		<string>0000</string>
 		<string>0016</string>
 		<string>0005</string>
+		<string>0020</string>
 		<string>0014</string>
 		<string>0003</string>
+		<string>0019</string>
 		<string>0008</string>
 		<string>0012</string>
 		<string>0001</string>
 		<string>000</string>
 		<string>0017</string>
 		<string>0006</string>
-		<string>0019</string>
+		<string>0021</string>
 	</array>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
@@ -1696,11 +1701,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-02-07T16:37:06Z</date>
+	<date>2020-02-12T14:19:44Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
-	<true/>
+	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
@@ -1726,7 +1731,7 @@
 	<key>WindowNumber</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.7</string>
+	<string>3.3.8</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
