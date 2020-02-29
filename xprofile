@@ -9,6 +9,7 @@ dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XA
 
 # run the remaps script, switching caps/esc and more; check it for more info
 remaps &
+sxhkd &
 # set the background with the `setbg` script
 setbg &
 # xcompmgr for transparency
