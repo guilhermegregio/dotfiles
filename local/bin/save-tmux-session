@@ -1,0 +1,6 @@
+#!/bin/sh
+
+
+sh .tmux/plugins/tmux-resurrect/scripts/save.sh
+
+cat ~/.tmux/resurrect/last|lpass edit --notes tmux-session --non-interactive
