@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# toggles the yabai menu bar
+
+# run as get_icon state icon_if_off icon_if_on
+# reversed becauase state read in is actually the *next* state
+function get_icon
+{
+  if [ "$1" = "true" ]; then
+    echo $2
+  else
+    echo $3
+  fi
+}
+
+# change spacing based off monitor resolution
+# laptop width
+if [ $(res) -eq 2880 ]; then
+  spaces="                                                                                                                                                                                                                                            "
+  espace="           "
+  factor=8
+else
+  spaces="                                                                                                                                                                                                                                                                                                     "
+  espace="            "
+  factor=8
+fi
+
+# read in the states from right to left
+read -r state1<~/.local/share/caffine.state
+read -r state2<~/.local/share/flux.state
+read -r state3<~/.local/share/zap.state
+read -r state4<~/.local/share/anime.state
+
+num="$(yabai -m query --spaces | jq length)"
+nums="|||||6|7|8|9|10"
+# add spacing factor in order to prevent icons from shifting left
+icons="${spaces}$(printf '%0.s ' $(seq 1 $(( $factor*(10 - num) ))))$(get_icon $state4  )${espace}$(get_icon $state3  )${espace}$(get_icon $state2  )${espace}$(get_icon $state1  )"
+
+# replace last desktop with icons
+comb="${nums//$num/$icons}"
+
+# split | seperated string into an array
+IFS='|' read -r -a array <<< "$comb"
+# unpack array into arguments
+yabai -m config status_bar_space_icon_strip "${array[@]}"

@@ -1,0 +1,55 @@
+#!/bin/bash
+
+function log {
+	echo "$1" #> ~/log.txt
+}
+
+hasWindow="true"
+read -r state<~/.local/share/scratchpad.state
+read -r wid<~/.local/share/scratchpad-wid.state
+wid=${wid:-0}
+yabai -m query --windows --window $wid >/dev/null 2>&1 || hasWindow="false" 
+
+log "State: $state" 
+log "Wid: $wid" 
+log "HasWindow: $hasWindow" 
+
+if [ "$hasWindow" = "false" ]; then
+	log "Create window" 
+
+	state="false";
+
+    kitty --single-instance -d ~ vim -c "VimwikiIndex";
+
+	sleep 1
+
+	yabai -m query --windows --window | jq .id > ~/.local/share/scratchpad-wid.state
+
+    read -r wid<~/.local/share/scratchpad-wid.state
+
+	log "WindowID: $wid" 
+
+    yabai -m window $wid --toggle float;
+
+	yabai -m window $wid --grid 4:4:1:1:2:2;
+
+	yabai -m window --focus $wid;
+
+	yabai -m window $wid  --display 1;
+else
+  log "Has window $wid" 
+
+  if [ "$state" = "true" ]; then
+    log "hide window $wid" 
+	yabai -m window $wid --move abs:10000:10000;
+  else
+    log "show window $wid" 
+	yabai -m window $wid --grid 4:4:1:1:2:2;
+	yabai -m window $wid  --display 1;
+	yabai -m window --focus $wid;
+  fi
+fi
+
+~/.local/bin/toggle_bool $state > ~/.local/share/scratchpad.state
+~/.local/bin/toggle
+
