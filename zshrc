@@ -61,7 +61,7 @@ ZSH_HISTORY_FILE_ENC="${ZSH_HISTORY_PROJ}/zsh_history"
 GIT_COMMIT_MSG="latest $(date)"
 
 # Plugins zsh
-plugins=(tmux git git-flow ng docker docker-compose zsh-iterm-touchbar history-sync)
+plugins=(tmux git git-flow ng docker docker-compose zsh-iterm-touchbar history-sync vimwiki-sync)
 
 # User configuration
 export GRADLE_HOME="/opt/gradle-2.14"

@@ -149,6 +149,10 @@ nnoremap <Leader>lcc :LanguageToolClear<CR>
 nnoremap <Leader>lcn :lne<CR>
 nnoremap <Leader>lco :lopen<CR>
 
+
+" Vimwiki-sync
+nnoremap <Leader>w<Leader>s :let &shell='/bin/zsh -i'<CR>:!vwsync<CR>
+
 "colo OceanicNext
 syntax on
 colo dracula
