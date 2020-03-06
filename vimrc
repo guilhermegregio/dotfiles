@@ -153,6 +153,12 @@ nnoremap <Leader>lco :lopen<CR>
 " Vimwiki-sync
 nnoremap <Leader>w<Leader>s :let &shell='/bin/zsh -i'<CR>:!vwsync<CR>
 
+" Automatically deletes all trailing whitespace on save.
+autocmd BufWritePre * %s/\s\+$//e
+
+" Update binds when sxhkdrc is updated.
+autocmd BufWritePost *skhdrc !skhd -r
+
 "colo OceanicNext
 syntax on
 colo dracula
