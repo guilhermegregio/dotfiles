@@ -1,0 +1,9 @@
+#!/bin/sh
+
+lpass show --field "Private Key" ID_RSA > ~/.ssh/id_rsa
+
+lpass show --field "Public Key" ID_RSA > ~/.ssh/id_rsa.pub
+
+chmod 0400 ~/.ssh/id_rsa
+
+echo "SSH Key Configured"
