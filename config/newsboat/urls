@@ -1,0 +1,22 @@
+# Posts
+http://lukesmith.xyz/rss.xml "Article" "Tech"
+https://www.archlinux.org/feeds/news/ "Article" "Tech"
+https://kentcdodds.com/blog/rss.xml "Article" "Tech" "React"
+https://overreacted.io/rss.xml "Article" "Tech" "React"
+
+# YouTube
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "YouTube" "Tech" "~Luke Smith (YouTube)"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCnLdHOuue5i1O7TsH6oh07w "YouTube" "Tech" "~BrazilJS (YouTube)"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCEf5U1dB5a2e2S-XUlnhxSA "YouTube" "Tech"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg "YouTube" "Tech"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCU5JicSrEM5A63jkJ2QvGYw "YouTube" "Tech"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCqd9oVuR4tuKD5Y9AFwxz7Q "YouTube" "Tech"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCPlemwX82_QEWRDC6yYnOCg "YouTube" "Wellness" "~Leandro Twin (YouTube)"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCA5zP2aDDl4cbYmTsSGqsXA "YouTube" "Wellness"
+https://www.youtube.com/feeds/videos.xml?channel_id=UChsZDP7pW_08Sk6Tp4U8KJA "YouTube" "Wellness"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCJRl1-GRDmqomLMipkN9srw "YouTube" "Wellness"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCuiZ0ToprbYyy7iK21Qly8g "YouTube" "Wellness"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCd4g7oX49jtbX7rN-wclkJg "YouTube" "Wellness"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC9e9YKIrMu_WsEdjV2Z8Nlg "YouTube" "Wellness"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCt_4wzTQqmcUvemNkeO0plA "YouTube" "Nerd"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCevaIHgjRXaYX3S6uQY8rig "YouTube" "Nerd"
