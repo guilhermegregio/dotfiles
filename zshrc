@@ -141,7 +141,6 @@ bindkey -s '^o' 'lfcd\n'  # zsh
 
 # Config ASDF Pack Manager
 . $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
 
 #eval $(thefuck --alias)
 

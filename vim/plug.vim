@@ -25,7 +25,7 @@ Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'schickling/vim-bufonly'
 
 Plug 'scrooloose/syntastic'
-Plug 'ternjs/tern_for_vim' 
+Plug 'ternjs/tern_for_vim'
 
 Plug 'ludovicchabant/vim-gutentags'
 
@@ -41,6 +41,7 @@ Plug 'mattn/emmet-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'joukevandermaas/vim-ember-hbs'
+Plug 'chase/vim-ansible-yaml'
 
 Plug 'elmcast/elm-vim'
 
@@ -48,6 +49,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'PratikBhusal/vim-grip'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'dpelle/vim-LanguageTool'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 Plug 'sbdchd/neoformat'
