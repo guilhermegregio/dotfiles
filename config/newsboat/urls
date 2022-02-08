@@ -3,6 +3,8 @@ http://lukesmith.xyz/rss.xml "Article" "Tech"
 https://www.archlinux.org/feeds/news/ "Article" "Tech"
 https://kentcdodds.com/blog/rss.xml "Article" "Tech" "React"
 https://overreacted.io/rss.xml "Article" "Tech" "React"
+https://egghead.io/feed "Article" "Tech"
+https://egghead.io/lessons/pro_feed?user_email=guilherme%40gregio.net&user_token=10b5b4b3-ed72-4ce3-a124-6e07ae24faa1 "Article" "Tech"
 
 # YouTube
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "YouTube" "Tech" "~Luke Smith (YouTube)"
