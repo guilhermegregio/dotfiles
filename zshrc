@@ -61,7 +61,7 @@ ZSH_HISTORY_FILE_ENC="${ZSH_HISTORY_PROJ}/zsh_history"
 GIT_COMMIT_MSG="latest $(date)"
 
 # Plugins zsh
-plugins=(tmux git git-flow ng docker docker-compose zsh-iterm-touchbar history-sync vimwiki-sync)
+plugins=(tmux git git-flow ng docker docker-compose zsh-iterm-touchbar history-sync vimwiki-sync kubectl)
 
 # User configuration
 export GRADLE_HOME="/opt/gradle-2.14"
@@ -145,3 +145,6 @@ bindkey -s '^o' 'lfcd\n'  # zsh
 #eval $(thefuck --alias)
 
 export PATH="$PATH:$HOME/.local/bin"
+
+
+export HOMEBREW_GITHUB_API_TOKEN=a881d57c21e0338b5c12d780dbe231193bcb1909

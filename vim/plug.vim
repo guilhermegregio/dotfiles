@@ -37,6 +37,9 @@ Plug 'tomarrell/vim-npr'
 Plug 'leafgarland/typescript-vim'
 Plug 'ianks/vim-tsx'
 
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+Plug 'iamcco/coc-tailwindcss',  {'do': 'yarn install --frozen-lockfile && yarn run build'}
+
 Plug 'mattn/emmet-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
