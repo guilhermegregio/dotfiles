@@ -61,7 +61,7 @@ ZSH_HISTORY_FILE_ENC="${ZSH_HISTORY_PROJ}/zsh_history"
 GIT_COMMIT_MSG="latest $(date)"
 
 # Plugins zsh
-plugins=(tmux git git-flow ng docker docker-compose zsh-iterm-touchbar history-sync vimwiki-sync kubectl)
+plugins=(tmux git git-flow ng docker docker-compose zsh-iterm-touchbar history-sync vimwiki-sync kubectl zsh-yarn-completions pnpm)
 
 # User configuration
 export GRADLE_HOME="/opt/gradle-2.14"
@@ -139,6 +139,13 @@ lfcd () {
 
 bindkey -s '^o' 'lfcd\n'  # zsh
 
+
+f() {
+  lvim -o `ag --hidden --ignore .git -g "" | fzf --preview 'bat --style numbers,changes --color=always {} | head -500' | sort`
+}
+
+bindkey -s '^v' 'f\n'  # zsh
+
 # Config ASDF Pack Manager
 . $HOME/.asdf/asdf.sh
 
@@ -147,4 +154,19 @@ bindkey -s '^o' 'lfcd\n'  # zsh
 export PATH="$PATH:$HOME/.local/bin"
 
 
-export HOMEBREW_GITHUB_API_TOKEN=a881d57c21e0338b5c12d780dbe231193bcb1909
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
+
+#
+# pnpm
+export PNPM_HOME="/Users/guilherme.gregio/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+#
+# Nix
+if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+  . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+fi
+
+export PATH="$HOME/.nix-profile/bin:/nix/var/nix/profiles/default/bin:$PATH"

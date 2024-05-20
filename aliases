@@ -3,14 +3,14 @@ function mkv2mp4 () {
 }
 
 # Shortcuts
-alias p="cd ~/Projects"
 alias g="git"
 alias h="history"
 alias j="jobs"
-alias v="vim"
-alias vi="vim"
+alias v="lvim"
+alias vi="lvim"
 
 # Easier navigation: .., ..., ~ and -
+alias cdp="cd ~/Projects/"
 alias ..="cd .."
 alias cd..="cd .."
 alias ...="cd ../.."
