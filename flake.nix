@@ -35,7 +35,7 @@
       };
       overlays = with inputs; [ ];
       user = "guilherme.gregio";
-      hostname = "workmachine";
+      hostname = "BRSAOMN045381";
       system = "aarch64-darwin";
     in {
       formatter.${system} = nixpkgs.legacyPackages.${system}.nixfmt;

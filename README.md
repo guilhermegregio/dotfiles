@@ -21,4 +21,4 @@ https://medium.com/@crashybang/should-front-end-developers-learn-a-tool-like-vim
 https://github.com/webpro/awesome-dotfiles
 
 
-nix --experimental-features "nix-command flakes" build ".#darwinConfigurations.workmachine.system"
+nix --experimental-features "nix-command flakes" build ".#darwinConfigurations.BRSAOMN045381.system"
