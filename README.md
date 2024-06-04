@@ -19,3 +19,6 @@ https://github.com/naustudio/dotfiles
 
 https://medium.com/@crashybang/should-front-end-developers-learn-a-tool-like-vim-bb49a7627313
 https://github.com/webpro/awesome-dotfiles
+
+
+nix --experimental-features "nix-command flakes" build ".#darwinConfigurations.workmachine.system"
