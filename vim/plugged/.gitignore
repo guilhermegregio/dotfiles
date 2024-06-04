@@ -1,5 +1,0 @@
-# Ignore ALL THE PLUGINS!
-/*/
-
-# And don't ignore yourself!
-!.gitignore

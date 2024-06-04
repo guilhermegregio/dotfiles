@@ -1,7 +1,0 @@
-#!/bin/bash
-
-lpass show --notes tmux-session > ~/.tmux/resurrect/last
-
-
-
-.tmux/plugins/tmux-resurrect/scripts/restore.sh

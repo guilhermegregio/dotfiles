@@ -1,3 +1,0 @@
-#!/bin/bash
-
-yabai -m window --focus recent

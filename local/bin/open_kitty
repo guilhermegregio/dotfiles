@@ -1,5 +1,0 @@
-#!/bin/bash
-
-kitty --single-instance -d ~ lf
-
-
