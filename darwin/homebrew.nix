@@ -15,20 +15,27 @@
       upgrade = false;
     };
     brews = [
-      # "borders" # borders for windows
+      "borders" # borders for windows
     ];
     casks = [
+      "nikitabobko/tap/aerospace"
+      "raycast"
+
       "wezterm"
       "zoom"
       "slack"
       "zed" # editor
+
+      "arc"
+
+      "sf-symbols"
     ];
     taps = [
       # default
       "homebrew/bundle"
       "homebrew/services"
       # custom
-      "FelixKratz/formulae" # borders
+      "FelixKratz/homebrew-formulae" # borders
     ];
   };
 }
