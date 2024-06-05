@@ -87,7 +87,7 @@
         NSAutomaticSpellingCorrectionEnabled = false;
         NSAutomaticWindowAnimationsEnabled = false;
         NSWindowResizeTime = 0.0;
-        NSWindowShouldDragOnGesture = "YES";
+        NSWindowShouldDragOnGesture = true;
         "com.apple.sound.beep.feedback" = 0;
         "com.apple.trackpad.scaling" = 2.0;
       };
