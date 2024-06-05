@@ -175,6 +175,11 @@
     # let home-manager manage itself
     home-manager.enable = true;
 
+    direnv = {
+      enable = true;
+      nix-direnv.enable = true;
+    };
+
     # shell integrations are enabled by default
     zoxide.enable = true; # autojump
     jq.enable = true; # json parser
