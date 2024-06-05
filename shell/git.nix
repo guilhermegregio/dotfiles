@@ -4,10 +4,6 @@
     delta.enable = true;
     userName = "Guilherme Mangabeira Gregio";
     userEmail = "guilherme@gregio.net";
-    signing = {
-      key = null; # gnupg decides by mail
-      signByDefault = true;
-    };
     includes = [
       {
         condition = "gitdir:~/code/stone/";
