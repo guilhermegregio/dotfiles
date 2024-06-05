@@ -1,7 +1,7 @@
 { pkgs, pkgs-zsh-fzf-tab, ... }: {
   programs.zsh = {
     enable = true;
-    enableautosuggestions = true;
+    enableAutosuggestions = true;
     enableCompletion = false;
     autocd = true;
     dotDir = ".config/zsh";
