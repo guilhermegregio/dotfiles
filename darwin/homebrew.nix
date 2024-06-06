@@ -16,6 +16,7 @@
     };
     brews = [
       "borders" # borders for windows
+      "lastpass-cli" # lpass cli
     ];
     casks = [
       "nikitabobko/tap/aerospace"
@@ -31,7 +32,6 @@
       "sf-symbols"
 
       "lastpass"
-      "lastpass-cli"
     ];
     taps = [
       # default
