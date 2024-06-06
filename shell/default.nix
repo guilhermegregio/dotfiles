@@ -21,7 +21,6 @@
       ripgrep # fast search
 
       # utilities
-      lastpass-cli
       gh # github cli tool
       # grc # colored log output
       # gitAndTools.delta # pretty diff tool

@@ -31,6 +31,7 @@
       "sf-symbols"
 
       "lastpass"
+      "lastpass-cli"
     ];
     taps = [
       # default
