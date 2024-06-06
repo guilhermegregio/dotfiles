@@ -29,6 +29,8 @@
       "arc"
 
       "sf-symbols"
+
+      "lastpass"
     ];
     taps = [
       # default

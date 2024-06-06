@@ -20,10 +20,12 @@
       fd
       ripgrep # fast search
 
+      # utilities
+      lastpass-cli
+      gh # github cli tool
       # grc # colored log output
       # gitAndTools.delta # pretty diff tool
       # sshfs # mount folders via ssh
-      gh # github cli tool
       # glab # gitlab cli tool
       # graph-easy # draw graphs in the terminal
       # cht-sh # cheat sheet -> cht python read file
