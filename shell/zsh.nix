@@ -26,9 +26,34 @@
     '';
 
     shellAliases = {
+
+      # overrides
+      cat = "bat";
+      top = "btop";
+      htop = "btop";
+      # ping = "gping";
+      # diff = "delta";
+      # ssh = "TERM=screen ssh";
+      # python = "python3";
+      # pip = "python3 -m pip";
+      # venv = "python3 -m venv";
+      # j = "z";
+
+      # programs
+      g = "git";
+      # k = "kubectl";
+      # d = "docker";
+      # kca = "kubectl apply -f";
+      # dc = "docker-compose";
+      # poe = "poetry";
+      # tf = "terraform";
+      # nr = "npm run";
+      # py = "python";
+      # pu = "pulumi";
+      # cht = "cht.sh"; # terminal cheat sheet
+
       psf = "ps -aux | grep";
       lsf = "ls | grep";
-      g = "git";
 
       weather = "curl -4 http://wttr.in/Koeln";
 

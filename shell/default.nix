@@ -186,9 +186,9 @@
     zoxide.enable = true; # autojump
     jq.enable = true; # json parser
     bat.enable = true; # pretty cat
+    btop.enable = true; # htop alternative
     # lazygit.enable = true; # git tui
     # nnn.enable = true; # file browser
-    btop.enable = true; # htop alternative
     # nushell.enable = true; # zsh alternative
     # broot.enable = true; # browser big folders
 
