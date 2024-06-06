@@ -22,6 +22,7 @@
 
       # utilities
       gh # github cli tool
+      tig # texxt interface for git
       # grc # colored log output
       # gitAndTools.delta # pretty diff tool
       # sshfs # mount folders via ssh
