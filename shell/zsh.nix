@@ -65,10 +65,6 @@
     };
 
     plugins = [
-      # {
-      #   name = "zsh-nix-shell";
-      #   src = "${pkgs.zsh-nix-shell}/share/zsh-nix-shell";
-      # }
       {
         name = "zsh-nix-shell";
         file = "nix-shell.plugin.zsh";
