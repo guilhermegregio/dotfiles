@@ -1,7 +1,6 @@
 { ... }: {
   programs.zellij = {
     enable = true;
-    enableZshIntegration = true;
   };
 
   home.file.zellij = {
