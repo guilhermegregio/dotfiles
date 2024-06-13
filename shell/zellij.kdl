@@ -25,6 +25,7 @@ keybinds clear-defaults=true {
     bind "Ctrl l" { GoToNextTab; SwitchToMode "Normal"; }
     bind "Ctrl h" { GoToPreviousTab; SwitchToMode "Normal"; }
 
+    bind "Ctrl r" { SwitchToMode "Resize"; }
     bind "," { SwitchToMode "RenameTab"; TabNameInput 0;}
     bind "<" { SwitchToMode "RenamePane"; PaneNameInput 0;}
   }
@@ -37,6 +38,20 @@ keybinds clear-defaults=true {
     bind "Ctrl Space" { UndoRenamePane; SwitchToMode "Normal"; }
     bind "Esc" { UndoRenamePane; SwitchToMode "Normal"; }
     bind "Enter" { SwitchToMode "Normal"; }
+  }
+  resize {
+    bind "Ctrl Space" { SwitchToMode "Normal"; }
+    bind "Esc" { SwitchToMode "Normal"; }
+    bind "h" "Left" { Resize "Increase Left"; }
+    bind "j" "Down" { Resize "Increase Down"; }
+    bind "k" "Up" { Resize "Increase Up"; }
+    bind "l" "Right" { Resize "Increase Right"; }
+    bind "H" { Resize "Decrease Left"; }
+    bind "J" { Resize "Decrease Down"; }
+    bind "K" { Resize "Decrease Up"; }
+    bind "L" { Resize "Decrease Right"; }
+    bind "=" "+" { Resize "Increase"; }
+    bind "-" { Resize "Decrease"; }
   }
 }
 theme "catppuccin-mocha"
