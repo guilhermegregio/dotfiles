@@ -31,10 +31,11 @@ keybinds clear-defaults=true {
   renametab {
     bind "Ctrl Space" { UndoRenameTab; SwitchToMode "Normal"; }
     bind "Esc" { UndoRenameTab; SwitchToMode "Normal"; }
+    bind "Enter" { SwitchToMode "Normal"; }
   }
   renamepane {
     bind "Ctrl Space" { UndoRenamePane; SwitchToMode "Normal"; }
-    bind "Esc" { UndoRenamePane; SwitchToMode "Normal"; }
+    bind "Ernter" { SwitchToMode "Normal"; }
   }
 }
 theme "catppuccin-mocha"
