@@ -1,6 +1,7 @@
 { pkgs, ... }: {
   imports = [
       ./zsh.nix
+      ./zellij.nix
       ./git.nix
     ];
 
