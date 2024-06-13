@@ -19,18 +19,24 @@
       "lastpass-cli" # lpass cli
     ];
     casks = [
+      # productivity
       "nikitabobko/tap/aerospace"
       "raycast"
 
-      "wezterm"
+      # communication
       "zoom"
       "slack"
-      "zed" # editor
 
+      #code
+      "wezterm"
+      "zed"
+      "android-studio"
+
+      # browsers
       "arc"
 
+      # utils
       "sf-symbols"
-
       "lastpass"
     ];
     taps = [
