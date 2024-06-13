@@ -35,7 +35,7 @@ keybinds clear-defaults=true {
   }
   renamepane {
     bind "Ctrl Space" { UndoRenamePane; SwitchToMode "Normal"; }
-    bind "Ernter" { SwitchToMode "Normal"; }
+    bind "Enter" { SwitchToMode "Normal"; }
   }
 }
 theme "catppuccin-mocha"
