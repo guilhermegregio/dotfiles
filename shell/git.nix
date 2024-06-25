@@ -44,6 +44,10 @@
       "kls_database.db" # kotlin lsp
       "result"
       "tags"
+
+      # nix envs
+      ".envrc"
+      ".direnv"
     ];
     extraConfig = {
       init.defaultBranch = "main";
