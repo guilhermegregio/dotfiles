@@ -69,7 +69,7 @@
 
             nix = {
               # enable flakes per default
-              package = pkgs.nixFlakes;
+              package = pkgs.nixVersions.stable;
               gc = {
                 automatic = false;
                 user = user;
@@ -81,6 +81,8 @@
                 # produces linking issues when updating on macOS
                 # https://github.com/NixOS/nix/issues/7273
                 auto-optimise-store = false;
+                sandbox = false;
+                ssl-cert-file = "/Library/Application Support/Netskope/STAgent/data/nscacert_combined.pem";
               };
             };
           })

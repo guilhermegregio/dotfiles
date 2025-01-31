@@ -34,10 +34,13 @@
 
       # browsers
       "arc"
+      "zen-browser"
 
       # utils
       "sf-symbols"
       "lastpass"
+
+      "docker"
     ];
     taps = [
       # default

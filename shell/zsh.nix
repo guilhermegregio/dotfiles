@@ -23,6 +23,8 @@
     initExtra = ''
       # used for homebrew
       export XDG_DATA_DIRS=$XDG_DATA_DIRS:/opt/homebrew/share
+      export MOBILE_PLATFORM_GITHUB_TOKEN=
+      export MOBILE_PLATFORM_GITHUB_USERNAME=guilhermegregio
     '';
 
     shellAliases = {

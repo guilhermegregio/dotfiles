@@ -1,6 +1,7 @@
 { ... }: {
   programs.git = {
     enable = true;
+    lfs.enable = true;
     delta.enable = true;
     userName = "Guilherme Mangabeira Gregio";
     userEmail = "guilherme@gregio.net";
@@ -8,10 +9,6 @@
       {
         condition = "gitdir:~/code/stone/";
         contents.user.email = "guilherme.gregio@stone.com.br";
-      }
-      {
-        condition = "gitdir:~/code/dinerama/";
-        contents.user.email = "gregio@dinerama.com.br";
       }
     ];
     aliases = {

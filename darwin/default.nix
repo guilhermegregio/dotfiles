@@ -5,6 +5,8 @@
     variables = {
       EDITOR = "nvim";
       VISUAL = "nvim";
+      NIX_SSL_CERT_FILE = "/etc/ssl/certs/combined-ca.pem";
+      SSL_CERT_FILE = "/etc/ssl/certs/combined-ca.pem";
     };
   };
 
@@ -25,13 +27,10 @@
     dns = [ "9.9.9.9" "1.1.1.1" "8.8.8.8" ];
   };
 
-  fonts = {
-    fontDir.enable = true;
-    fonts = with pkgs; [
-      (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
-      sketchybar-app-font
-    ];
-  };
+  fonts.packages = with pkgs; [
+    pkgs.nerd-fonts.jetbrains-mono
+    sketchybar-app-font
+  ];
 
   security = { pam.enableSudoTouchIdAuth = true; };
 
