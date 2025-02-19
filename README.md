@@ -22,3 +22,24 @@ https://github.com/webpro/awesome-dotfiles
 
 
 nix --experimental-features "nix-command flakes" build ".#darwinConfigurations.BRSAOMN045381.system"
+
+## NetSkope config
+
+https://jackrose.co.nz/til/reliable-nix-netskope-install/
+
+```
+NETSKOPE_DATA_DIR="/Library/Application Support/Netskope/STAgent/data/"
+
+security find-certificate -a -p \
+  /System/Library/Keychains/SystemRootCertificates.keychain \
+  /Library/Keychains/System.keychain \
+  >/tmp/nscacert_combined.pem
+
+sudo cp /tmp/nscacert_combined.pem "$NETSKOPE_DATA_DIR"
+```
+
+add on /etc/nix/nix.conf
+
+```
+ssl-cert-file = /Library/Application Support/Netskope/STAgent/data/nscacert_combined.pem
+```
