@@ -23,8 +23,35 @@
     initExtra = ''
       # used for homebrew
       export XDG_DATA_DIRS=$XDG_DATA_DIRS:/opt/homebrew/share
-      export MOBILE_PLATFORM_GITHUB_TOKEN=
+      export MOBILE_PLATFORM_GITHUB_TOKEN=ghp_
       export MOBILE_PLATFORM_GITHUB_USERNAME=guilhermegregio
+      
+      export MINT_PATH="$HOME/.mint"
+      export MINT_LINK_PATH="$MINT_PATH/bin"
+      export PATH=$MINT_LINK_PATH:$PATH
+      export CURL_CA_BUNDLE=/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem
+      export SSL_CERT_FILE=/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem
+      export GIT_SSL_CAPATH=/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem
+      export CURL_CA_BUNDLE=/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem
+      export SSL_CERT_FILE=/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem
+      export GIT_SSL_CAPATH=/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem
+      export CURL_CA_BUNDLE=/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem
+      export SSL_CERT_FILE=/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem
+      export GIT_SSL_CAPATH=/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem
+
+      export ANDROID_SDK_ROOT=$HOME/Users/guilherme.gregio/Library/Android/sdk
+      export ANDROID_HOME=$ANDROID_SDK_ROOT
+      export NDK_HOME=$ANDROID_HOME/ndk-bundle
+      export CUSTOM_GITHUB_PERSONAL_ACCESS_TOKEN_PACKAGE=ghp_
+      export TEMP_TAP_SDK_IOS_TOKEN=ghp_
+      export APP_STORE_API_KEY_PATH=$HOME/apollo_ios_build/api_key.json
+      export PNPM_HOME=~/.pnpm
+      
+      export PATH=$PATH:$ANDROID_HOME/emulator
+      export PATH=$PATH:$ANDROID_HOME/tools
+      export PATH=$PATH:$ANDROID_HOME/tools/bin
+      export PATH=$PATH:$ANDROID_HOME/platform-tools
+      export PATH=$PATH:$PNPM_HOME
     '';
 
     shellAliases = {

@@ -28,7 +28,6 @@
       "slack"
 
       #code
-      "wezterm"
       "zed"
       "android-studio"
 
