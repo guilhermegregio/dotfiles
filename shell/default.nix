@@ -6,7 +6,10 @@
     ];
 
   home = {
-    packages = with pkgs; [
+    packages = let
+      verify-app = pkgs.callPackage ../scripts/verify-app.nix {};
+    in with pkgs; [
+      verify-app
       neovim # customized by overlay
       # net tools
       # bind
