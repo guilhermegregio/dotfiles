@@ -11,8 +11,6 @@ pkgs.writeShellApplication {
   ];
 
   text = ''
-    #!/usr/bin/env bash
-
     # Script para executar comandos gradle com parâmetros personalizados
     # Uso: gradle-runner <tribe> <product> [print]
 
