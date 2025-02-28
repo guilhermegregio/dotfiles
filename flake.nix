@@ -72,7 +72,6 @@
               package = pkgs.nixVersions.stable;
               gc = {
                 automatic = false;
-                user = user;
               };
               settings = {
                 allowed-users = [ user ];
@@ -86,28 +85,24 @@
               };
             };
           })
-          home-manager.darwinModule
+          home-manager.darwinModules.home-manager
           {
-            home-manager = {
-              useGlobalPkgs = true;
-              useUserPackages = true;
-              # makes all inputs available in imported files for hm
-              extraSpecialArgs = {
-                inherit inputs;
-                pkgs-zsh-fzf-tab =
-                  import inputs.nixpkgs-zsh-fzf-tab { inherit system; };
-              };
-              users.${user} = { ... }:
-                with inputs; {
-                  imports = [ ./home-manager ./shell ];
-                  home.stateVersion = "24.05";
-                  # from feovim
-                  # feovim = {
-                  #   ideavim.enable = true;
-                  #   vscode.enable = true;
-                  # };
-                };
+            nixpkgs = {
+              config = { allowUnfree = true; };
             };
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            # makes all inputs available in imported files for hm
+            home-manager.extraSpecialArgs = {
+              inherit inputs;
+              pkgs-zsh-fzf-tab =
+                import inputs.nixpkgs-zsh-fzf-tab { inherit system; };
+            };
+            home-manager.users.${user} = { ... }:
+              with inputs; {
+                imports = [ ./home-manager ./shell ];
+                home.stateVersion = "24.05";
+              };
           }
         ];
       };

@@ -17,6 +17,10 @@
     brews = [
       "borders" # borders for windows
       "lastpass-cli" # lpass cli
+
+      "xcode-kotlin"
+      "mint"
+      "sourcery"
     ];
     casks = [
       # productivity
@@ -29,6 +33,7 @@
 
       #code
       "zed"
+      "trae"
       "android-studio"
 
       # browsers

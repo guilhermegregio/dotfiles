@@ -15,7 +15,6 @@
   services = {
     # FIXME: driver issues
     karabiner-elements.enable = false;
-    nix-daemon.enable = true;
     sketchybar = {
       enable = false;
       extraPackages = with pkgs; [ jq gh ];
@@ -31,8 +30,6 @@
     pkgs.nerd-fonts.jetbrains-mono
     sketchybar-app-font
   ];
-
-  security = { pam.enableSudoTouchIdAuth = true; };
 
   system = {
     keyboard = {
