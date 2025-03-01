@@ -171,11 +171,15 @@
 
     sessionVariables = {
       # GO111MODULE = "on";
-      EDITOR = "nvim";
-      VISUAL = "nvim";
       NIXPKGS_ALLOW_UNFREE = "1";
       # PULUMI_CONFIG_PASSPHRASE = "";
-      NIX_SSL_CERT_FILE="/etc/ssl/certs/combined-ca.pem";
+      EDITOR = "nvim";
+      VISUAL = "nvim";
+      NIX_SSL_CERT_FILE = "/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem";
+      SSL_CERT_FILE = "/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem";
+      CURL_CA_BUNDLE = "/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem";
+      GIT_SSL_CAPATH = "/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem";
+      REQUESTS_CA_BUNDLE = "/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem";
     };
   };
 

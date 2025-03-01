@@ -40,6 +40,9 @@
       "arc"
       "zen-browser"
 
+      # terminals
+      "ghostty"
+
       # utils
       "sf-symbols"
       "lastpass"

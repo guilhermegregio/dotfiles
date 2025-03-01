@@ -1,0 +1,15 @@
+theme = catppuccin-mocha
+font-size = 19
+mouse-hide-while-typing = true
+
+keybind = global:cmd+`=toggle_quick_terminal
+
+window-decoration = false
+
+# Some macOS settings
+macos-option-as-alt = true
+macos-titlebar-style = hidden
+macos-non-native-fullscreen = true
+
+# Disables ligatures
+# font-feature = ["-liga" "-dlig" "-calt"];
