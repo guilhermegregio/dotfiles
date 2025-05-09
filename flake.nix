@@ -35,7 +35,7 @@
       };
       overlays = with inputs; [ ];
       user = "guilherme.gregio";
-      hostname = "BRSAOMN045381";
+      hostname = "MacBook-Pro";
       system = "aarch64-darwin";
     in {
       formatter.${system} = nixpkgs.legacyPackages.${system}.nixfmt;
