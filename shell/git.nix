@@ -56,7 +56,7 @@
       fetch = { prune = true; };
       push.autoSetupRemote = true;
       delta = { line-numbers = true; };
-      http.sslCAInfo = "/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem";
+      http.sslCAInfo = "/etc/ssl/certs/combined-ca.pem";
     };
   };
 }

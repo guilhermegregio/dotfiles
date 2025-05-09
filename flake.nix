@@ -81,7 +81,8 @@
                 # https://github.com/NixOS/nix/issues/7273
                 auto-optimise-store = false;
                 sandbox = false;
-                ssl-cert-file = "/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem";
+                ssl-cert-file = "/etc/ssl/certs/combined-ca.pem";
+                http2 = false;
               };
             };
           })

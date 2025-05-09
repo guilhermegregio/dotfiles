@@ -1,15 +1,15 @@
 { pkgs, ... }: {
-  imports = [ ./homebrew.nix ./skhd.nix ./yabai.nix ];
+  imports = [ ./homebrew.nix ];
 
   environment = {
     variables = {
       EDITOR = "nvim";
       VISUAL = "nvim";
-      NIX_SSL_CERT_FILE = "/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem";
-      SSL_CERT_FILE = "/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem";
-      CURL_CA_BUNDLE = "/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem";
-      GIT_SSL_CAPATH = "/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem";
-      REQUESTS_CA_BUNDLE = "/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem";
+      NIX_SSL_CERT_FILE = "/etc/ssl/certs/combined-ca.pem";
+      SSL_CERT_FILE = "/etc/ssl/certs/combined-ca.pem";
+      CURL_CA_BUNDLE = "/etc/ssl/certs/combined-ca.pem";
+      GIT_SSL_CAPATH = "/etc/ssl/certs/combined-ca.pem";
+      REQUESTS_CA_BUNDLE = "/etc/ssl/certs/combined-ca.pem";
     };
   };
 

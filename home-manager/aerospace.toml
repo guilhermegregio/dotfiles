@@ -43,6 +43,7 @@ PATH = '/opt/homebrew/bin:/opt/homebrew/sbin:${PATH}'
 [mode.main.binding]
 alt-enter = 'exec-and-forget wezterm'
 alt-c = 'exec-and-forget caffeinate -disu'
+alt-x = 'exec-and-forget xcode15'
 
 alt-h = 'focus left'
 alt-j = 'focus down'

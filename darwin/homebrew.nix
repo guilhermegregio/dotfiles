@@ -21,6 +21,7 @@
       "xcode-kotlin"
       "mint"
       "sourcery"
+      "carthage"
     ];
     casks = [
       # productivity
@@ -46,8 +47,9 @@
       # utils
       "sf-symbols"
       "lastpass"
-
       "docker"
+      "claude"
+      "chatgpt"
     ];
     taps = [
       # default
