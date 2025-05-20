@@ -23,6 +23,7 @@
       wget
       curl
       fd
+      eza
       ripgrep # fast search
 
       # utilities

@@ -8,7 +8,7 @@
 
     enableCompletion = false;
     autocd = true;
-    dotDir = ".config/zsh";
+    # dotDir = ".config/zsh";
     #defaultKeymap = "viins"; #vicmd or viins
 
     history = {
@@ -23,7 +23,6 @@
     initContent = ''
       # used for homebrew
       export XDG_DATA_DIRS=$XDG_DATA_DIRS:/opt/homebrew/share
-      export MOBILE_PLATFORM_GITHUB_USERNAME=guilhermegregio
 
       # export NIX_SSL_CERT_FILE = /Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem
       # export SSL_CERT_FILE = /Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem
@@ -63,6 +62,9 @@
 
       # programs
       g = "git";
+      ls = "eza";
+      la = "ls -lha";
+      lt = "ls --tree --git-ignore";
       # k = "kubectl";
       # d = "docker";
       # kca = "kubectl apply -f";
@@ -74,14 +76,13 @@
       # pu = "pulumi";
       # cht = "cht.sh"; # terminal cheat sheet
 
-      psf = "ps -aux | grep";
-      lsf = "ls | grep";
+      psf = "ps -aux | rg";
 
       weather = "curl -4 http://wttr.in/Koeln";
 
       # nix
       ne = "zed ~/.nixpkgs";
-      nf = "nix run nix-darwin -- switch --flake ~/.nixpkgs";
+      nf = "sudo /run/current-system/sw/bin/nix run nix-darwin -- switch --flake ~/.nixpkgs";
       nclean =
         "nix-collect-garbage -d && nix-store --gc && nix-store --verify --check-contents && nix store optimise";
     };
