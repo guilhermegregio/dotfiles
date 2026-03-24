@@ -16,7 +16,6 @@
     };
     brews = [
       "borders" # borders for windows
-      "lastpass-cli" # lpass cli
 
       "xcode-kotlin"
       "mint"
@@ -33,23 +32,24 @@
       "slack"
 
       #code
+      "cmux"
       "zed"
-      "trae"
       "android-studio"
+      "intellij-idea-ce"
+      "dbeaver-community"
 
       # browsers
       "arc"
-      "zen-browser"
+      "zen"
+      "google-chrome"
 
       # terminals
       "ghostty"
 
       # utils
       "sf-symbols"
-      "lastpass"
-      "docker"
-      "claude"
-      "chatgpt"
+      "docker-desktop"
+      "obs"
     ];
     taps = [
       # default

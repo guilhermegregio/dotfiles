@@ -43,3 +43,10 @@ add on /etc/nix/nix.conf
 ```
 ssl-cert-file = /Library/Application Support/Netskope/STAgent/data/nscacert_combined.pem
 ```
+
+
+## Atualizar sistema
+
+```sh
+sudo /run/current-system/sw/bin/nix run nix-darwin -- switch --flake ~/.nixpkgs
+```

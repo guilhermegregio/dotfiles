@@ -10,6 +10,10 @@
       CURL_CA_BUNDLE = "/etc/ssl/certs/combined-ca.pem";
       GIT_SSL_CAPATH = "/etc/ssl/certs/combined-ca.pem";
       REQUESTS_CA_BUNDLE = "/etc/ssl/certs/combined-ca.pem";
+      MOBILE_PLATFORM_GITHUB_USERNAME="guilhermegregio";
+      MOBILE_PLATFORM_GITHUB_TOKEN="<REPLACE>";
+      CUSTOM_GITHUB_PERSONAL_ACCESS_TOKEN_PACKAGE="<REPLACE>";
+      TEMP_TAP_SDK_IOS_TOKEN="<REPLACE>";
     };
   };
 

@@ -9,9 +9,15 @@
     packages = let
       verify-app = pkgs.callPackage ../scripts/verify-app.nix {};
       xcode15 = pkgs.callPackage ../scripts/xcode15.nix {};
+      notify-beep = pkgs.callPackage ../scripts/notify-beep.nix {};
+      wtree = pkgs.callPackage ../scripts/wtree.nix {};
+      cc-review = pkgs.callPackage ../scripts/cc-review.nix {};
     in with pkgs; [
       verify-app
       xcode15
+      notify-beep
+      wtree
+      cc-review
       neovim # customized by overlay
       # net tools
       # bind
@@ -28,9 +34,15 @@
 
       # utilities
       gh # github cli tool
+      gh-dash
+      herdr # agent multiplexer (via overlay)
       tig # texxt interface for git
       yazi
       cookiecutter
+      colima
+      yq
+      android-tools
+      sdkmanager
       # grc # colored log output
       # gitAndTools.delta # pretty diff tool
       # sshfs # mount folders via ssh
@@ -201,7 +213,7 @@
     jq.enable = true; # json parser
     bat.enable = true; # pretty cat
     btop.enable = true; # htop alternative
-    # lazygit.enable = true; # git tui
+    lazygit.enable = true; # git tui
     # nnn.enable = true; # file browser
     # nushell.enable = true; # zsh alternative
     # broot.enable = true; # browser big folders

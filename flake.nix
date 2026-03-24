@@ -20,6 +20,12 @@
     nixpkgs-zsh-fzf-tab.url =
       "github:nixos/nixpkgs/8193e46376fdc6a13e8075ad263b4b5ca2592c03";
 
+    # agent multiplexer (https://herdr.dev)
+    herdr = {
+      url = "github:ogulcancelik/herdr";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # sketchybar config
     # sketchybar = {
     #   url = "github:FelixKratz/dotfiles";
@@ -33,9 +39,9 @@
         allowUnfree = true;
         allowUnsupportedSystem = false;
       };
-      overlays = with inputs; [ ];
+      overlays = with inputs; [ herdr.overlays.default ];
       user = "guilherme.gregio";
-      hostname = "MacBook-Pro";
+      hostname = "K14J914570";
       system = "aarch64-darwin";
     in {
       formatter.${system} = nixpkgs.legacyPackages.${system}.nixfmt;
@@ -52,6 +58,7 @@
             nixpkgs.overlays = overlays;
 
             system = {
+              primaryUser = "guilherme.gregio";
               stateVersion = 4;
               configurationRevision = self.rev or self.dirtyRev or null;
             };

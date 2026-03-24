@@ -32,7 +32,7 @@
 
       export MINT_PATH="$HOME/.mint"
       export MINT_LINK_PATH="$MINT_PATH/bin"
-      export ANDROID_SDK_ROOT=$HOME/Users/guilherme.gregio/Library/Android/sdk
+      export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
       export ANDROID_HOME=$ANDROID_SDK_ROOT
       export NDK_HOME=$ANDROID_HOME/ndk-bundle
       export APP_STORE_API_KEY_PATH=$HOME/apollo_ios_build/api_key.json
@@ -82,7 +82,8 @@
 
       # nix
       ne = "zed ~/.nixpkgs";
-      nf = "sudo /run/current-system/sw/bin/nix run nix-darwin -- switch --flake ~/.nixpkgs";
+      fr = "sudo /run/current-system/sw/bin/nix run nix-darwin -- switch --flake ~/.nixpkgs";
+      fu = "sudo /run/current-system/sw/bin/nix run nix-darwin -- switch --flake ~/.nixpkgs";
       nclean =
         "nix-collect-garbage -d && nix-store --gc && nix-store --verify --check-contents && nix store optimise";
     };
