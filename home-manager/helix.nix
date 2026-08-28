@@ -34,7 +34,7 @@
             name = "typescript";
             auto-format = true;
             formatter = {
-              command = "${pkgs.nodePackages.prettier}/bin/prettier";
+              command = "${pkgs.prettier}/bin/prettier";
               args = [ "--parser" "typescript" ];
             };
             language-servers = [ "typescript-language-server" ];
@@ -43,7 +43,7 @@
             name = "tsx";
             auto-format = true;
             formatter = {
-              command = "${pkgs.nodePackages.prettier}/bin/prettier";
+              command = "${pkgs.prettier}/bin/prettier";
               args = [ "--parser" "typescript" ];
             };
             language-servers = [ "typescript-language-server" ];
@@ -52,7 +52,7 @@
             name = "javascript";
             auto-format = true;
             formatter = {
-              command = "${pkgs.nodePackages.prettier}/bin/prettier";
+              command = "${pkgs.prettier}/bin/prettier";
               args = [ "--parser" "javascript" ];
             };
             language-servers = [ "typescript-language-server" ];
@@ -61,7 +61,7 @@
             name = "jsx";
             auto-format = true;
             formatter = {
-              command = "${pkgs.nodePackages.prettier}/bin/prettier";
+              command = "${pkgs.prettier}/bin/prettier";
               args = [ "--parser" "javascript" ];
             };
             language-servers = [ "typescript-language-server" ];
@@ -81,7 +81,7 @@
         language-server = {
           typescript-language-server = {
             command =
-              "${pkgs.nodePackages.typescript-language-server}/bin/typescript-language-server";
+              "${pkgs.typescript-language-server}/bin/typescript-language-server";
             args = [ "--stdio" ];
           };
           pyright = {
