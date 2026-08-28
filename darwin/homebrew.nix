@@ -13,13 +13,8 @@
       cleanup = "zap";
       autoUpdate = false;
       upgrade = false;
-      extraActivationCommands = ''
-        brew trust --formula FelixKratz/homebrew-formulae/borders || true
-      '';
     };
     brews = [
-      "borders" # borders for windows
-
       "xcode-kotlin"
       "mint"
       "sourcery"
@@ -52,13 +47,6 @@
       "sf-symbols"
       "docker-desktop"
       "obs"
-    ];
-    taps = [
-      # default
-      #"homebrew/bundle"
-      #"homebrew/services"
-      # custom
-      "FelixKratz/homebrew-formulae" # borders
     ];
   };
 }

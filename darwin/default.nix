@@ -19,7 +19,21 @@
 
   programs = { zsh.enable = true; };
 
+  security.pam.services.sudo_local = {
+    touchIdAuth = true;
+    # pam_reattach: makes Touch ID work inside zellij/tmux
+    reattach = true;
+  };
+
   services = {
+    # window borders (was the `borders` brew from FelixKratz's tap)
+    jankyborders = {
+      enable = true;
+      active_color = "0xffe1e3e4";
+      inactive_color = "0xff494d64";
+      width = 10.0;
+    };
+
     # FIXME: driver issues
     karabiner-elements.enable = false;
     sketchybar = {
