@@ -63,6 +63,8 @@
               configurationRevision = self.rev or self.dirtyRev or null;
             };
 
+            ids.gids.nixbld = 350;
+
             users.users.${user} = {
               home = "/Users/${user}";
               shell = pkgs.zsh;
