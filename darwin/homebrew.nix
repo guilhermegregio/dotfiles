@@ -32,7 +32,6 @@
       "slack"
 
       #code
-      "cmux"
       "zed"
       "android-studio"
       "intellij-idea-ce"
@@ -53,8 +52,8 @@
     ];
     taps = [
       # default
-      "homebrew/bundle"
-      "homebrew/services"
+      #"homebrew/bundle"
+      #"homebrew/services"
       # custom
       "FelixKratz/homebrew-formulae" # borders
     ];
