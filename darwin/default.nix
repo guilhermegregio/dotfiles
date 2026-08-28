@@ -81,6 +81,7 @@
         _HIHideMenuBar = false;
         AppleFontSmoothing = 0;
         AppleInterfaceStyle = "Dark";
+        AppleInterfaceStyleSwitchesAutomatically = false;
         AppleKeyboardUIMode = 3;
         AppleScrollerPagingBehavior = true;
         AppleShowAllExtensions = true;

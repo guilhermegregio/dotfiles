@@ -13,6 +13,9 @@
       cleanup = "zap";
       autoUpdate = false;
       upgrade = false;
+      extraActivationCommands = ''
+        brew trust --formula FelixKratz/homebrew-formulae/borders || true
+      '';
     };
     brews = [
       "borders" # borders for windows
