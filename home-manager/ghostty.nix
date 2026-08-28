@@ -1,6 +1,6 @@
 { pkgs, ... }: {
   home.file = {
-    "~/.config/ghostty/config".source = ./ghostty-config;
+    ".config/ghostty/config".source = ./ghostty-config;
   };
   # programs.ghostty = {
   #   enable = true;
