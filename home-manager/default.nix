@@ -4,5 +4,6 @@
     ./ghostty.nix
     ./aerospace.nix
     ./helix.nix
+    ./herdr.nix
   ];
 }
