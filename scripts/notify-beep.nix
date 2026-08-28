@@ -1,7 +1,7 @@
 { pkgs ? import <nixpkgs> {} }:
 
 let
-  platformInputs = pkgs.lib.optionals pkgs.stdenv.isLinux [ pkgs.libnotify ];
+  platformInputs = pkgs.lib.optionals pkgs.stdenv.hostPlatform.isLinux [ pkgs.libnotify ];
 in
 pkgs.writeShellApplication {
   name = "notify-beep";
