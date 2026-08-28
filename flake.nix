@@ -41,7 +41,7 @@
       };
       overlays = with inputs; [ herdr.overlays.default ];
       user = "guilherme.gregio";
-      hostname = "K14J914570";
+      hostname = "CV9NF4V0H6";
       system = "aarch64-darwin";
     in {
       formatter.${system} = nixpkgs.legacyPackages.${system}.nixfmt;
