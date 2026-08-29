@@ -7,7 +7,7 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-COMMON=(zellij starship ghostty helix)
+COMMON=(starship ghostty helix btop)
 MACOS=()          # aerospace herdr — entram na fase 2
 LINUX=()
 
