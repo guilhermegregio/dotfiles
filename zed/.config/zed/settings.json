@@ -1,0 +1,204 @@
+{
+  "cli_default_open_behavior": "new_window",
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
+  "theme": "Catppuccin Mocha",
+  "ui_font_size": 16,
+  "base_keymap": "VSCode",
+  "vim_mode": true,
+  "tab_size": 2,
+  "relative_line_numbers": true,
+  "load_direnv": "shell_hook",
+  "auto_update": false,
+  "auto_install_extensions": {
+    "catppuccin": true,
+    "dockerfile": true,
+    "git-firefly": true,
+    "html": true,
+    "lua": true,
+    "make": true,
+    "nix": true,
+    "sql": true,
+    "toml": true
+  },
+  "edit_predictions": {
+    "provider": "zed",
+    "disabled_globs": [],
+    "mode": "eager_preview"
+  },
+  "calls": {
+    "mute_on_join": true,
+    "share_on_join": false
+  },
+  "languages": {
+    "TSX": {
+      "language_servers": [
+        "biome",
+        "tailwindcss-language-server",
+        "vtsls"
+      ],
+      "formatter": "language_server",
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true
+      }
+    },
+    "TypeScript": {
+      "language_servers": [
+        "biome",
+        "tailwindcss-language-server",
+        "vtsls"
+      ],
+      "formatter": "language_server",
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true
+      }
+    },
+    "JavaScript": {
+      "language_servers": [
+        "biome",
+        "tailwindcss-language-server",
+        "vtsls"
+      ],
+      "formatter": "language_server"
+    },
+    "JSON": {
+      "language_servers": [
+        "biome",
+        "json-language-server"
+      ],
+      "formatter": "language_server"
+    },
+    "Nix": {
+      "language_servers": [
+        "nixd",
+        "nil"
+      ],
+      "formatter": {
+        "external": {
+          "command": "nixfmt"
+        }
+      },
+      "format_on_save": "on"
+    },
+    "json": {
+      "language_server": {
+        "binary": {
+          "path": "/nix/store/szcw15pvqr9slg69mf68m9mdnqx138d6-vscode-langservers-extracted-1.126.04524/bin/vscode-json-languageserver",
+          "path_lookup": true
+        }
+      }
+    },
+    "nix": {
+      "format_on_save": {
+        "external": {
+          "command": "/nix/store/81mvb88s7l4ciq2sicr0zsadazkd49yn-nixfmt-1.4.0/bin/nixfmt"
+        }
+      },
+      "language_servers": [
+        "/nix/store/kqmpz4j9cba5pznvlhzpi3xhisg03kx4-nixd-2.9.2/bin/nixd",
+        "/nix/store/g43v7kivqs3mlg356p7wrm0w4kiq7wl9-nil-2026-07-23/bin/nil"
+      ]
+    },
+    "tsx": {
+      "language_servers": [
+        "/nix/store/i187hqg1q9nk0n90wh0x7w7bmd4y9z2m-biome-2.5.9/bin/biome",
+        "/nix/store/820aqr543ix60psk9njxpx9hvi9zbsgi-tailwindcss-language-server-0.16.0/bin/tailwindcss-language-server"
+      ]
+    },
+    "typescript": {
+      "language_servers": [
+        "/nix/store/i187hqg1q9nk0n90wh0x7w7bmd4y9z2m-biome-2.5.9/bin/biome",
+        "/nix/store/820aqr543ix60psk9njxpx9hvi9zbsgi-tailwindcss-language-server-0.16.0/bin/tailwindcss-language-server"
+      ]
+    }
+  },
+  "lsp": {
+    "tailwindcss-language-server": {},
+    "nixd": {},
+    "nil": {
+      "initialization_options": {
+        "formatting": {
+          "command": [
+            "/nix/store/81mvb88s7l4ciq2sicr0zsadazkd49yn-nixfmt-1.4.0/bin/nixfmt"
+          ]
+        }
+      }
+    },
+    "json-language-server": {},
+    "biome": {
+      "settings": {
+        "config_path": "<path>/biome.json",
+        "require_config_file": true
+      }
+    }
+  },
+  "terminal": {
+    "shell": "system",
+    "dock": "bottom",
+    "working_directory": "current_project_directory",
+    "font_family": "FiraCode Nerd Font",
+    "font_features": null,
+    "font_size": null,
+    "line_height": "comfortable",
+    "blinking": "off",
+    "alternate_scroll": "off",
+    "copy_on_select": false,
+    "option_as_meta": false,
+    "button": false,
+    "toolbar": {
+      "breadcrumbs": true,
+      "title": true
+    },
+    "env": {
+      "TERM": "xterm-ghostty"
+    },
+    "detect_venv": {
+      "on": {
+        "activate_script": "default",
+        "directories": [
+          ".env",
+          "env",
+          ".venv",
+          "venv"
+        ]
+      }
+    }
+  },
+  "agent": {
+    "dock": "right",
+    "enabled": true,
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4-5"
+    }
+  },
+  "assistant": {
+    "default_model": {
+      "model": "claude-3-7-sonnet-latest",
+      "provider": "zed.dev"
+    },
+    "default_open_ai_model": null,
+    "enabled": true,
+    "version": "2"
+  },
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "hour_format": "hour24",
+  "node": {
+    "npm_path": "/nix/store/lfaydgacdyngci7p60s8wwvgdm74fjkx-nodejs-24.19.0/bin/npm",
+    "path": "/nix/store/lfaydgacdyngci7p60s8wwvgdm74fjkx-nodejs-24.19.0/bin/node"
+  }
+}
