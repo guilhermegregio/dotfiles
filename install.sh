@@ -7,8 +7,8 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-COMMON=(starship ghostty btop)
-MACOS=()          # aerospace herdr — entram na fase 2
+COMMON=(starship ghostty btop nvim herdr)
+MACOS=(aerospace)   # o WM é só do mac
 LINUX=()
 
 pkgs=("${COMMON[@]}")
