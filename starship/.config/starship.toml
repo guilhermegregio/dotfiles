@@ -1,0 +1,146 @@
+add_newline = false
+command_timeout = 1000
+format = "$directory$character"
+palette = "base16"
+right_format = "$all"
+
+[aws]
+disabled = false
+format = '[$symbol(profile: "$profile" )(\(region: $region\) )]($style)'
+style = "bold blue"
+symbol = " "
+
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
+
+[character]
+error_symbol = "[➜](bold red)"
+success_symbol = "[➜](bold green)"
+vicmd_symbol = '[\[N\] >>>](bold yellow)'
+
+[directory]
+read_only = " 󰌾"
+
+[docker_context]
+disabled = true
+symbol = " "
+
+[fossil_branch]
+symbol = " "
+
+[git_branch]
+format = "[$symbol$branch(:$remote_branch)]($style)"
+symbol = " "
+
+[git_status]
+ahead = " "
+behind = " "
+conflicted = "="
+deleted = "✗"
+diverged = " "
+modified = "!"
+renamed = "»"
+staged = "+"
+stashed = "$"
+untracked = "?"
+
+[golang]
+format = "[ ](bold cyan)"
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[hostname]
+ssh_symbol = " "
+
+[kubernetes]
+detect_files = ["Dockerfile"]
+disabled = true
+format = '[$symbol$context( \($namespace\))]($style) '
+symbol = "☸ "
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = "󰍛 "
+
+[meson]
+symbol = "󰔷 "
+
+[nim]
+symbol = "󰆥 "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[ocaml]
+symbol = " "
+
+[package]
+symbol = "󰏗 "
+
+[palettes.base16]
+base00 = "#1e1e2e"
+base01 = "#313244"
+base02 = "#45475a"
+base03 = "#6c7086"
+base04 = "#a6adc8"
+base05 = "#cdd6f4"
+base06 = "#f5e0dc"
+base07 = "#b4befe"
+base08 = "#f38ba8"
+base09 = "#fab387"
+base0a = "#f9e2af"
+base0b = "#a6e3a1"
+base0c = "#94e2d5"
+base0d = "#89b4fa"
+base0e = "#cba6f7"
+base0f = "#f2cdcd"
+base10 = "#1e1e2e"
+base11 = "#1e1e2e"
+base12 = "#f38ba8"
+base13 = "#f9e2af"
+base14 = "#a6e3a1"
+base15 = "#94e2d5"
+base16 = "#89b4fa"
+base17 = "#cba6f7"
+black = "#1e1e2e"
+blue = "#89b4fa"
+bright-black = "#6c7086"
+bright-blue = "#89b4fa"
+bright-cyan = "#94e2d5"
+bright-green = "#a6e3a1"
+bright-magenta = "#cba6f7"
+bright-purple = "#cba6f7"
+bright-red = "#f38ba8"
+bright-white = "#b4befe"
+bright-yellow = "#f9e2af"
+brown = "#f2cdcd"
+cyan = "#94e2d5"
+green = "#a6e3a1"
+magenta = "#cba6f7"
+orange = "#fab387"
+purple = "#cba6f7"
+red = "#f38ba8"
+white = "#cdd6f4"
+yellow = "#f9e2af"
+
+[python]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[swift]
+symbol = " "
+
+[zig]
+symbol = " "

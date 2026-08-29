@@ -1,0 +1,162 @@
+default_layout "compact"
+keybinds clear-defaults=true {
+	normal {
+		bind "Ctrl Space" {
+			SwitchToMode "tmux"
+		}
+	}
+	renamepane {
+		bind "Ctrl Space" {
+			SwitchToMode "Normal"
+			UndoRenamePane 
+		}
+		bind "Enter" {
+			SwitchToMode "Normal"
+		}
+		bind "Esc" {
+			SwitchToMode "Normal"
+			UndoRenamePane 
+		}
+	}
+	renametab {
+		bind "Ctrl Space" {
+			SwitchToMode "Normal"
+			UndoRenameTab 
+		}
+		bind "Enter" {
+			SwitchToMode "Normal"
+		}
+		bind "Esc" {
+			SwitchToMode "Normal"
+			UndoRenameTab 
+		}
+	}
+	resize {
+		bind "-" {
+			Resize "Decrease"
+		}
+		bind "=" {
+			Resize "Increase"
+		}
+		bind "Ctrl Space" {
+			SwitchToMode "Normal"
+		}
+		bind "Esc" {
+			SwitchToMode "Normal"
+		}
+		bind "H" {
+			Resize "Decrease Left"
+		}
+		bind "J" {
+			Resize "Decrease Down"
+		}
+		bind "K" {
+			Resize "Decrease Up"
+		}
+		bind "L" {
+			Resize "Decrease Right"
+		}
+		bind "h" {
+			Resize "Increase Left"
+		}
+		bind "j" {
+			Resize "Increase Down"
+		}
+		bind "k" {
+			Resize "Increase Up"
+		}
+		bind "l" {
+			Resize "Increase Right"
+		}
+	}
+	tmux {
+		bind "," {
+			SwitchToMode "RenameTab"
+			TabNameInput 0
+		}
+		bind "-" {
+			NewPane "Down"
+			SwitchToMode "Normal"
+		}
+		bind "<" {
+			PaneNameInput 0
+			SwitchToMode "RenamePane"
+		}
+		bind "Ctrl Space" {
+			SwitchToMode "Normal"
+		}
+		bind "Ctrl d" {
+			Detach 
+		}
+		bind "Ctrl h" {
+			GoToPreviousTab 
+			SwitchToMode "Normal"
+		}
+		bind "Ctrl l" {
+			GoToNextTab 
+			SwitchToMode "Normal"
+		}
+		bind "Ctrl r" {
+			SwitchToMode "Resize"
+		}
+		bind "Ctrl s" {
+			SwitchToMode "Normal"
+			ToggleActiveSyncTab 
+		}
+		bind "Esc" {
+			SwitchToMode "Normal"
+		}
+		bind "_" {
+			NewPane "Right"
+			SwitchToMode "Normal"
+		}
+		bind "c" {
+			NewTab 
+			SwitchToMode "Normal"
+		}
+		bind "d" {
+			CloseFocus 
+			SwitchToMode "Normal"
+		}
+		bind "h" {
+			MoveFocus "Left"
+			SwitchToMode "Normal"
+		}
+		bind "j" {
+			MoveFocus "Down"
+			SwitchToMode "Normal"
+		}
+		bind "k" {
+			MoveFocus "Up"
+			SwitchToMode "Normal"
+		}
+		bind "l" {
+			MoveFocus "Right"
+			SwitchToMode "Normal"
+		}
+		bind "s" {
+			LaunchOrFocusPlugin "session-manager"
+			SwitchToMode "Normal"
+		}
+		bind "z" {
+			SwitchToMode "Normal"
+			ToggleFocusFullscreen 
+		}
+	}
+}
+plugins {
+	compact-bar {
+		path "compact-bar"
+	}
+	status-bar {
+		path "status-bar"
+	}
+	strider {
+		path "strider"
+	}
+	tab-bar {
+		path "tab-bar"
+	}
+}
+simplified_ui true
+theme "catppuccin-mocha"

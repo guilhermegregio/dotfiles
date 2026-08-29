@@ -1,0 +1,14 @@
+background-opacity = 0.950000
+bell-features = audio,system,attention
+font-family = JetBrainsMono Nerd Font Mono
+font-feature = -liga
+font-feature = -dlig
+font-feature = -calt
+font-size = 15
+macos-option-as-alt = true
+notify-on-command-finish = unfocused
+notify-on-command-finish-action = notify,no-bell
+notify-on-command-finish-after = 10s
+theme = Catppuccin Mocha
+window-decoration = none
+window-theme = dark
