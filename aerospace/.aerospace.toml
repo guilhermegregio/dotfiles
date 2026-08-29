@@ -1,3 +1,4 @@
+config-version = 2
 # You can use it to add commands that run after login to macOS user session.
 # 'start-at-login' needs to be 'true' for 'after-login-command' to work
 # Available commands: https://nikitabobko.github.io/AeroSpace/commands
@@ -41,7 +42,11 @@ inherit-env-vars = true # If you don't touch "exec" section,
 PATH = '/opt/homebrew/bin:/opt/homebrew/sbin:${PATH}'
 
 [mode.main.binding]
-alt-enter = 'exec-and-forget ghostty'
+alt-enter = '''exec-and-forget osascript -e '
+tell application "Ghostty"
+    new window
+end tell'
+'''
 alt-c = 'exec-and-forget caffeinate -disu'
 alt-x = 'exec-and-forget xcode15'
 
