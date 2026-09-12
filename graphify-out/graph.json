@@ -1,0 +1,162 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "install.sh",
+      "file_type": "code",
+      "source_file": "install.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "install",
+      "community": 0,
+      "community_name": "install.sh",
+      "norm_label": "install.sh"
+    },
+    {
+      "label": "install.sh script",
+      "file_type": "code",
+      "source_file": "install.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "install_sh__entry",
+      "community": 0,
+      "community_name": "install.sh",
+      "norm_label": "install.sh script"
+    },
+    {
+      "label": "init.lua",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/init.lua",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "nvim_config_nvim_init",
+      "community": 1,
+      "community_name": "init.lua",
+      "norm_label": "init.lua"
+    },
+    {
+      "label": "autocmds.lua",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lua/config/autocmds.lua",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "nvim_config_nvim_lua_config_autocmds",
+      "community": 2,
+      "community_name": "autocmds.lua",
+      "norm_label": "autocmds.lua"
+    },
+    {
+      "label": "keymaps.lua",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lua/config/keymaps.lua",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "nvim_config_nvim_lua_config_keymaps",
+      "community": 3,
+      "community_name": "keymaps.lua",
+      "norm_label": "keymaps.lua"
+    },
+    {
+      "label": "lazy.lua",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lua/config/lazy.lua",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "nvim_config_nvim_lua_config_lazy",
+      "community": 4,
+      "community_name": "lazy.lua",
+      "norm_label": "lazy.lua"
+    },
+    {
+      "label": "options.lua",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lua/config/options.lua",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "nvim_config_nvim_lua_config_options",
+      "community": 5,
+      "community_name": "options.lua",
+      "norm_label": "options.lua"
+    },
+    {
+      "label": "conform.lua",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lua/plugins/conform.lua",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "nvim_config_nvim_lua_plugins_conform",
+      "community": 6,
+      "community_name": "conform.lua",
+      "norm_label": "conform.lua"
+    },
+    {
+      "label": "example.lua",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lua/plugins/example.lua",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "nvim_config_nvim_lua_plugins_example",
+      "community": 7,
+      "community_name": "example.lua",
+      "norm_label": "example.lua"
+    },
+    {
+      "label": "go.lua",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lua/plugins/go.lua",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "nvim_config_nvim_lua_plugins_go",
+      "community": 8,
+      "community_name": "go.lua",
+      "norm_label": "go.lua"
+    },
+    {
+      "label": "opencode.lua",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lua/plugins/opencode.lua",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "nvim_config_nvim_lua_plugins_opencode",
+      "community": 9,
+      "community_name": "opencode.lua",
+      "norm_label": "opencode.lua"
+    },
+    {
+      "label": "surround.lua",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lua/plugins/surround.lua",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "nvim_config_nvim_lua_plugins_surround",
+      "community": 10,
+      "community_name": "surround.lua",
+      "norm_label": "surround.lua"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "install.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "install",
+      "target": "install_sh__entry",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "1237507adb6a29cc36762cf1913610f41db8f760"
+}

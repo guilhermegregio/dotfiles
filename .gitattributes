@@ -1,0 +1,2 @@
+# graphify (kb project init-hygiene)
+graphify-out/graph.json merge=graphify -diff linguist-generated=true

@@ -1,0 +1,6 @@
+# graphify-out/.gitignore — allowlist invertida.
+# Versiona SÓ o graph.json enxuto; ignora cache/html/relatórios e o manifest.json
+# (cache incremental com mtime por arquivo → não-determinístico, não versionar).
+*
+!.gitignore
+!graph.json
